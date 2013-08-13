@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2cc66caf106c20f76fb518b9ac461044",
+    "hash": "0ba8b5606f966fd11faf811287de67a2",
     "packages": [
         {
             "name": "composer/installers",
@@ -115,30 +115,24 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "dev-master",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "d18bb858e3c020a81a4cb01d2df31871aeb0f56e"
+                "reference": "004dfa76b1ce858d67af4eea0d8d505fbe1a1a21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/d18bb858e3c020a81a4cb01d2df31871aeb0f56e",
-                "reference": "d18bb858e3c020a81a4cb01d2df31871aeb0f56e",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/004dfa76b1ce858d67af4eea0d8d505fbe1a1a21",
+                "reference": "004dfa76b1ce858d67af4eea0d8d505fbe1a1a21",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
                 "php": ">=5.3.2",
-                "silverstripe/framework": "3.2.x-dev",
-                "silverstripe/reports": "*"
+                "silverstripe/framework": "3.1.*"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "tests/behat/"
@@ -164,20 +158,20 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2013-08-09 12:45:26"
+            "time": "2013-08-09 12:53:17"
         },
         {
             "name": "silverstripe/framework",
-            "version": "dev-master",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "aff36c884553b8bd3478fd8c02a9053132ed107b"
+                "reference": "fd2a0cd1f9a55ebf883af887782cda5e8f564e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/aff36c884553b8bd3478fd8c02a9053132ed107b",
-                "reference": "aff36c884553b8bd3478fd8c02a9053132ed107b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/fd2a0cd1f9a55ebf883af887782cda5e8f564e42",
+                "reference": "fd2a0cd1f9a55ebf883af887782cda5e8f564e42",
                 "shasum": ""
             },
             "require": {
@@ -185,11 +179,6 @@
                 "php": ">=5.3.2"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "tests/behat/features/bootstrap"
@@ -215,48 +204,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2013-08-12 23:26:24"
-        },
-        {
-            "name": "silverstripe/reports",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-reports.git",
-                "reference": "2c384cb38058d6ecf6d5eec75567f470ad34c926"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-reports/zipball/2c384cb38058d6ecf6d5eec75567f470ad34c926",
-                "reference": "2c384cb38058d6ecf6d5eec75567f470ad34c926",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "silverstripe/framework": ">=3.2.x-dev,<4.0"
-            },
-            "type": "silverstripe-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "SilverStripe",
-                    "homepage": "http://silverstripe.com"
-                },
-                {
-                    "name": "The SilverStripe Community",
-                    "homepage": "http://silverstripe.org"
-                }
-            ],
-            "homepage": "http://silverstripe.org",
-            "keywords": [
-                "cms",
-                "reports",
-                "silverstripe"
-            ],
-            "time": "2013-07-15 09:29:38"
+            "time": "2013-08-09 13:33:01"
         }
     ],
     "packages-dev": [
