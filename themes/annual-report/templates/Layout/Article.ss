@@ -1,6 +1,6 @@
 <% include SideBar %>
 
-<article class="article">
+<article class="article" role="main">
 	<% if $Photo %>
 		<div class="article-img">
 			<img src="$Photo.SetWidth(765).URL" alt="$Title">

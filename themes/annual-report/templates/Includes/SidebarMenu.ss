@@ -3,7 +3,7 @@
 <% if LinkOrSection = section %>
 	<% if $Children %>
 		<% loop $Children %>
-			<li class="item $LinkingMode $Challenge.Title ">
+			<li class="item $Challenge.Title">
 
 				<a href="$Link" class="preview-link $LinkingMode" title="Go to the $Title.XML page">
 					<% if $Photo %>
@@ -13,14 +13,6 @@
                     <span class="preview-dept">$Department</span>
                     <p class="preview-excerpt">$Excerpt</p>
                 </a>
-
-				<!--
-				<% if $Children %>
-					<ul>
-						<% include SidebarMenu %>
-					</ul>
-				<% end_if %>
-				-->
 
 			</li>
 		<% end_loop %>
