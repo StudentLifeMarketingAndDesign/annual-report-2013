@@ -9,7 +9,7 @@ $databaseConfig = array(
 	"server" => 'localhost',
 	"username" => 'root',
 	"password" => 'omega',
-	"database" => 'annual-report-2013',
+	"database" => 'annualreport2013',
 	"path" => '',
 );
 
