@@ -3,7 +3,7 @@
 <% if LinkOrSection = section %>
 	<% if $Children %>
 		<% loop $Children %>
-			<li class="item $LinkingMode $Challenge.Title ">
+			<li class="item $LinkingMode $Challenge">
 
 				<a href="$Link" class="preview-link $LinkingMode" title="Go to the $Title.XML page">
 					<% if $Photo %>

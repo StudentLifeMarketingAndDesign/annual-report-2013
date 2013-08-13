@@ -3,7 +3,7 @@ class Article extends Page {
 
 	public static $db = array(
 		"Department" => "Text",
-		//"Challenge" => "Text",
+		"Challenge" => "Enum('Excel, Stretch, Engage, Choose, Serve', 'Excel')",
 		"WordsBy" => "Text",
 		"VideoBy" => "Text",
 		"Excerpt" => "Text",
@@ -11,9 +11,8 @@ class Article extends Page {
 	);
 
 	public static $has_one = array(
-		"Photo" => "Image",
-		"Challenge" => "Challenge"
-		//"Team" => "StaffTeam"
+		"Photo" => "Image"
+
 	);
 	
 	public function getCMSFields(){
@@ -23,21 +22,7 @@ class Article extends Page {
 		$fields->removeByName("Metadata");
 
 		$fields->addFieldToTab("Root.Main", new TextField("Department", "Department"));
-		//$fields->addFieldToTab("Root.Main", new TextField("Challenge", "Challenge Name"));
-
-		$gridFieldConfig = GridFieldConfig_RecordEditor::create();
-		$gridField = new GridField("Challenges", "Challenges", Challenge::get(), $gridFieldConfig);
-
-		$fields->addFieldToTab("Root.Challenges", new LabelField("ChallengeLabel", "<h2>Add Challenges below</h2>"));
-		$fields->addFieldToTab("Root.Challenges", $gridField); // add the grid field to a tab in the CMS
-
-		$fields->addFieldToTab("Root.Main", new TextField("WordsBy", "Words By:"));
-		$fields->addFieldToTab("Root.Main", new TextField("VideoBy", "Video By:"));
-		$fields->addFieldToTab("Root.Main", new TextareaField("Excerpt", "Excerpt"));
-		
-		$fields->addFieldToTab("Root.Main", new DropdownField("ChallengeID", 'Challenge', Challenge::get()->map('ID', 'Title')));
-		
-		//$fields->addFieldToTab("Root.Main", new LiteralField("TeamLabel", ''));
+		$fields->addFieldToTab("Root.Main", new DropdownField('Challenge','Challenge',singleton('Article')->dbObject('Challenge')->enumValues()));
 
 		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo (dimensions)"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content"));
