@@ -52,29 +52,11 @@
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- Isotope
+    
+    <!-- Isotope -->
     <script src="{$ThemeDir}/js/vendor/jquery.isotope.min.js"></script>
-    <script>
-        $(function() {
-            var $container = $('#container');
+    <script src="{$ThemeDir}/js/main.js"></script>
 
-            $container.isotope({
-                // options
-                itemSelector : '.item',
-                layoutMode : 'straightDown'
-            });
-
-            // filter items when filter link is clicked
-            $('#filters a').click(function(){
-                var selector = $(this).attr('data-filter');
-                $container.isotope({ filter: selector });
-                $('#filters a').removeClass('active');
-                $(this).addClass('active');
-                return false;
-            });
-        });  
-    </script>
- 	-->
     <!-- Big Video -->
     <script src="{$ThemeDir}/js/vendor/jquery-ui-1.8.22.custom.min.js"></script>
     <script src="{$ThemeDir}/js/vendor/jquery.imagesloaded.min.js"></script>
