@@ -13,7 +13,7 @@
                 <p>$Excerpt</p>
             </div>
             <div class="article-meta">
-                <% if $WordsBy %><p>WORDS BY <em id="page-article-author">$WordsBy</em></p><% end_if %>
+                <% if $WordsBy %><p>WRITTEN BY <em id="page-article-author">$WordsBy</em></p><% end_if %>
                 <% if $VideoBy %><p>PHOTO BY <em>$VideoBy</em></p><% end_if %>
             </div>
         </div>
