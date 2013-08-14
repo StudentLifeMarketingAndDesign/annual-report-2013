@@ -44,7 +44,7 @@
     </div>
 </div>
 
-<% include SideBar %>
+<% include PreviewList %>
 <div class="home-content">
     <img src="{$ThemeDir}/images/dosl-lg.png" alt="" class="dosl" width="500">
     <!-- $Content -->
