@@ -280,6 +280,10 @@ body {
 	line-height: 40px;
 	margin: 15px 0;
 }
+.article-content .full-image img {
+	display: block;
+	margin: 15px 0;
+}
 .article-content > p:first-of-type:first-letter {
 	float: left;
 	color: #111;
