@@ -1,4 +1,4 @@
-<% include SideBar %>
+<% include PreviewList %>
 
 <article class="article" role="main">
 	<% if $Photo %>

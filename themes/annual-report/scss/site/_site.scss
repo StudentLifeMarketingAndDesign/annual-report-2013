@@ -261,6 +261,9 @@ body {
 		margin-top: 0;
 		width: 65%;
 	}
+	& p, & ul, & ol {
+		margin: 1em 0;
+	}
 }
 .full-quote, .full-image {
 	border-bottom: 1px dotted #c9c9c9;
