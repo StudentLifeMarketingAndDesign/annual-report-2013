@@ -66,7 +66,7 @@
         $(function() {
             var BV = new $.BigVideo({useFlashForFirefox:false});
             BV.init();
-            BV.show('{$ThemeDir}/video/xmen.mp4');
+            BV.show('{$ThemeDir}/video/000016662489_HDFlashVideo.mp4');
         });
     </script>
 
