@@ -1,21 +1,10 @@
 <% include Menu %>
 <% include PreviewList %>
 
-
-	<!-- <nav class="nav-bar">
-		<div class="nav-wrap">
-
-		</div>
-		<div class="bar">
-			<div class="nav-btn"></div>
-		</div>
-	</nav>
-
-	<div class="cover">
-		<div class="cover-img" style="background-image: url('$Photo.URL');"></div>
-	</div> -->
-
 	<article class="article" role="main">
+		<div class="spinner">
+			<img src="{$ThemeDir}/images/spinner.gif" alt="">
+		</div>
 		<% if $Photo %>
 			<div class="article-img">
 				<img src="$Photo.SetWidth(765).URL" alt="$Title">
@@ -38,4 +27,5 @@
 			</div>
 		</div>
 	</article>
+	</div>
 

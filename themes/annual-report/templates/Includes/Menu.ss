@@ -1,7 +1,7 @@
 <div class="menu">
     <a href="index.php"><img src="{$ThemeDir}/images/logo.gif"></a>
     <ul id="filters" class="main-nav">
-        <li><a href="#" data-filter="*" class="active">All</a></li>
+        <li><a href="#" data-filter="*">All</a></li>
         <li><a href="#" data-filter=".Excel">Excel</a></li>
         <li><a href="#" data-filter=".Stretch">Stretch</a></li>
         <li><a href="#" data-filter=".Choose">Choose</a></li>
