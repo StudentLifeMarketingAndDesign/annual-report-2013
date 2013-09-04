@@ -47,5 +47,9 @@ $Layout
     <!-- Ajaxify -->
     <script src="{$ThemeDir}/js/vendor/ajaxify-html5.js"></script>
 
+    <!-- FitVids -->
+    <script src="{$ThemeDir}/js/vendor/jquery.fitvids.min.js"></script>
+    <script>$(document).ready(function(){$(".article-content").fitVids();});</script>
+
 </body>
 </html>
