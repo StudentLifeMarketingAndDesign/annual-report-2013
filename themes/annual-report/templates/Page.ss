@@ -32,6 +32,7 @@ $Layout
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <!-- Isotope -->
     <script src="{$ThemeDir}/js/vendor/jquery.isotope.min.js"></script>
     <script src="{$ThemeDir}/js/main.js"></script>
