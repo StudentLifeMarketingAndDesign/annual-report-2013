@@ -99,7 +99,6 @@ body {
 /* PREVIEW LIST
 ========================================================================== */
 .preview-list {
-	display: none;
 	height: 100%;
 	overflow: auto;
 	background: #fff;
@@ -112,11 +111,9 @@ body {
 	-webkit-overflow-scrolling: touch;
 	z-index: 900;
 	@media screen and (min-width: $break-medium) {
-		display: block;
 		width: 300px;
 	}
 	@media screen and (min-width: $break-large) {
-		display: block;
 		width: 35%;
 	}
 }
@@ -195,7 +192,7 @@ body {
 		-webkit-box-orient: vertical;
 	}
 	@media screen and (min-width: $break-large) {
-		-webkit-line-clamp: 4;
+		-webkit-line-clamp: 3;
 	}
 	@media screen and (min-width: $break-xlarge) {
 		font-size: 15px;
