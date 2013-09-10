@@ -66,7 +66,7 @@
         $(function() {
             var BV = new $.BigVideo({useFlashForFirefox:false});
             BV.init();
-            BV.show('{$ThemeDir}/video/cedarville720.mp4',{ambient:true});
+            BV.show('{$ThemeDir}/video/pentacrest.mp4',{ambient:true});
         });
     </script>
 

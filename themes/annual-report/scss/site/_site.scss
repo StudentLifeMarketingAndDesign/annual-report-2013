@@ -82,17 +82,17 @@ body {
 /* HOME
 ========================================================================== */
 .home-content {
-	margin-left: 45%;
+	margin-left: 35%;
 	height: 100%;
 	position: absolute;
-	width: 55%;
+	width: 65%;
 }
 .home-content .dosl {
-	height: 187px;
-	margin: auto;
-	padding: 0 1em;
+	margin: 0 auto;
 	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -250px;
 }
 
 
@@ -297,7 +297,19 @@ body {
 		margin-bottom: 1em;
 	}
 }
-.article-content blockquote, .article-content .full-image {
+.article-content blockquote {
+	border-bottom: 1px dotted #ccc;
+	border-top: 1px dotted #ccc;
+	margin-right: 2em;
+	margin-left: -5%;
+	float: left;
+	width: 40%;
+	@media screen and (min-width: $break-xxlarge) {
+		margin: 1.5em 0 1.5em -53%;
+		width: auto;
+	}
+}
+.article-content .full-image {
 	border-bottom: 1px dotted #ccc;
 	border-top: 1px dotted #ccc;
 	margin: 1.5em 0;
@@ -307,10 +319,12 @@ body {
 }
 .article-content blockquote p {
 	color: #0087b7;
-	font-size: 30px;
+	font-size: 21px;
 	font-style: italic;
-	line-height: 40px;
 	margin: 15px 0;
+	@media screen and (min-width: $break-xxlarge) {
+		font-size: 27px;
+	}
 }
 .article-content .full-image img {
 	display: block;

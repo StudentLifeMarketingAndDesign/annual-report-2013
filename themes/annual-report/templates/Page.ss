@@ -44,8 +44,8 @@ $Layout
     <!-- History.js -->
     <script src="//browserstate.github.io/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
 
-    <!-- Ajaxify
-    <script src="{$ThemeDir}/js/vendor/ajaxify-html5.js"></script> -->
+    <!-- Ajaxify -->
+    <script src="{$ThemeDir}/js/vendor/ajaxify-html5.js"></script>
 
     <!-- FitVids -->
     <script src="{$ThemeDir}/js/vendor/jquery.fitvids.min.js"></script>
