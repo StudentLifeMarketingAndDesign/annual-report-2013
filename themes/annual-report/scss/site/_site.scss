@@ -305,9 +305,16 @@ body {
 	float: left;
 	width: 40%;
 	@media screen and (min-width: $break-xxlarge) {
+		float: none;
 		margin: 1.5em 0 1.5em -53%;
 		width: auto;
 	}
+}
+.article-content blockquote.right {
+	float: right;
+	margin-left: 2em;
+	margin-right: -5%;
+	text-align: right;
 }
 .article-content .full-image {
 	border-bottom: 1px dotted #ccc;
