@@ -14,6 +14,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
+	<link rel="stylesheet" href="{$BaseHref}division-bar/css/_division-bar.css" />
 
 	<!-- JS -->
 	<script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
@@ -27,11 +28,12 @@
 
 <body class="$ClassName">
 
+<% include DivisionBar %>
 
 $Layout
 
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
     <!-- Isotope -->
     <script src="{$ThemeDir}/js/vendor/jquery.isotope.min.js"></script>
@@ -50,6 +52,8 @@ $Layout
     <!-- FitVids -->
     <script src="{$ThemeDir}/js/vendor/jquery.fitvids.min.js"></script>
     <script>$(document).ready(function(){$(".article-content").fitVids();});</script>
+
+    <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
 
 </body>
 </html>
