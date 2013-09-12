@@ -1,5 +1,8 @@
 /* Base styles
 ========================================================================== */
+html, body {
+	height: 100%;
+}
 html {
 	font-size: $base-font-size;
 }
@@ -11,65 +14,113 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	padding: 0;
-	xposition: relative;
-	top: 43px;
 }
 
 /* Layout
 ========================================================================== */
+#content-wrapper {
+	@media screen and (min-width: 650px) {
+		padding-top: 43px;
+	}
+}
 .container {
-	margin: 0 auto;
-	max-width: 980px;
-	padding: 0 1em;
+	xmargin: 0 auto;
+	xmax-width: 980px;
+	xpadding: 0 1em;
 }
 body .division-topbar {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1001;
+	@media screen and (min-width: 650px) {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1001;
+	}
 }
 .division-topbar .wrapper {
 	max-width: none;
-	padding: 0 1em;
+	xpadding: 0 1em;
+}
+
+/* HOME
+========================================================================== */
+.home-content {
+	height: 100%;
+	xposition: absolute;
+}
+
+.home-content .dosl {
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -200px;
 }
 
 /* MENU
 ========================================================================== */
 .menu {
-	border-right: 1px solid #ddd;
-	background: #fff;
-	display: none;
-	position: fixed;
-	top: 43px;
-	left: 0;
-	bottom: 0;
-	width: 101px;
-	height: 100%;
-	z-index: 1000;
-	-webkit-box-shadow: 3px 0 3px rgba(0,0,0,.05);
+	background-color: rgba(0,0,0,.01);
+	@media screen and (min-width: 650px) {
+		box-shadow: 0 3px 3px rgba(0,0,0,.05);
+		position: fixed;
+		top: 43px;
+		left: 0;
+		width: 27%;
+		z-index: 1000;
+	}
 	@media screen and (min-width: $break-large) {
+
+		background: #fff;
 		display: block;
+		position: fixed;
+		top: 43px;
+		left: 0;
+		bottom: 0;
+		width: 101px;
+		height: 100%;
+		z-index: 1000;
+		-webkit-box-shadow: 2px 0 2px rgba(0,0,0,.08);
+		-moz-box-shadow: 2px 0 2px rgba(0,0,0,.08);
+		box-shadow: 2px 0 2px rgba(0,0,0,.08);
+	}
+}
+.oldcap-logo {
+	border: 1px solid #e5e5e5;
+	display: block;
+	background: #fff;
+	@media screen and (min-width: $break-large) {
+		border: none;
 	}
 }
 .menu img {
 	display: block;
+	margin: 0 auto;
+	position: relative;
+	bottom: -3px;
+	@media screen and (min-width: $break-large) {
+		bottom: 0;
+	}
 }
 .menu-dosl {
 	margin: 0 auto;
 }
 .pos-btm {
-	position: absolute;
-	bottom: 20px;
-	left: 18px;
+	display: none;
+	@media screen and (min-width: $break-large) {
+		display: block;
+		position: absolute;
+		bottom: 60px;
+		left: 10px;
+		width: 80px;
+	}
 }
-
-/* NAVIGATION
-========================================================================== */
 .main-nav {
 	border-bottom: 1px solid #e5e5e5;
+	display: none;
 	list-style: none;
 	margin: 0;
-	margin-top: -4px;
+	margin-top: -2px;
 	padding: 0;
 	& li {
 		border-top: 1px solid #e5e5e5;
@@ -90,63 +141,61 @@ body .division-topbar {
 			color: #333;
 		}
 	}
+	@media screen and (min-width: $break-large) {
+		display: block;
+	}
 }
 .main-nav .active {
 	background-color: #fff;
 }
 
 
-/* HOME
-========================================================================== */
-.home-content {
-	margin-left: 25%;
-	height: 100%;
-	position: absolute;
-	width: 75%;
-	@media screen and (min-width: $break-large) {
-		margin-left: 35%;
-		width: 65%;
-	}
-}
-.home-content .dosl {
-	margin: 0 auto;
-	position: absolute;
-	bottom: 5%;
-	left: 50%;
-	margin-left: -200px;
-}
-
-
 /* PREVIEW LIST
 ========================================================================== */
+.HomePage .preview-list {
+	background-color: #f8f9f8;
+}
 .preview-list {
-	height: 100%;
-	overflow: auto;
-	background: #fff;
-	overflow-x: hidden;
-	position: fixed;
-	top: 43px;
-	bottom: 0;
-	width: 25%;
-	-ms-overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
-	z-index: 900;
+	background-color: rgba(0,0,0,.01);
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	xbackground: #fff;
+	@media screen and (min-width: 650px) {
+		display: block;
+		height: 100%;
+		overflow: auto;
+		overflow-x: hidden;
+		xpadding-top: 0;
+		xpadding-bottom: 300px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 27%;
+		-ms-overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;
+		z-index: 900;
+	}
 	@media screen and (min-width: $break-large) {
 		padding-left: 100px;
 		width: 33%;
 	}
 }
+.spantop {
+	display: none;
+	@media screen and (min-width: 650px) {
+		display: block;
+		height: 320px;
+	}
+}
 .preview-list ul {
 	list-style: none;
 	margin: 0;
-	padding: 0;
 	& li {
-		background: #f8f9f8;
+		xbackground: #f8f9f8;
 		border-bottom: 1px solid #e5e5e5;
-		box-shadow: -4px 0 3px rgba(0,0,0,.03) inset;
+		xbox-shadow: -4px 0 3px rgba(0,0,0,.02) inset;
 		width: 100%;
 		&:hover {
-			background-color: #fcfcfc;
+			xbackground-color: #fcfcfc;
 		}
 		&.active {
 			background: #fff;
@@ -157,15 +206,11 @@ body .division-topbar {
 	cursor: pointer;
 	display: block;
 	overflow: hidden;
-	padding: 7% 5%;
+	padding: 1em;
 	text-decoration: none;
 	text-rendering: optimizeLegibility;
-	@media screen and (min-width: $break-large) {
-		padding: 5%;
-	}
 }
 .preview-link:hover {
-	
 	text-decoration: none;
 }
 .preview-thumb {
@@ -236,13 +281,15 @@ body .division-topbar {
 
 /* ARTICLE
 ========================================================================== */
-.article {
-	border-left: 1px solid #e5e5e5;
-	margin-left: 25%;
-	position: relative;
-	top: 43px;
+.article {	
+	xposition: relative;
+	xtop: 43px;
+	@media screen and (min-width: 650px) {
+		xborder-left: 1px solid #e5e5e5;
+		xmargin-left: 25%;
+	}
 	@media screen and (min-width: $break-large) {
-		margin-left: 33%;
+		xmargin-left: 33%;
 	}
 }
 .article-body, .article-header {
@@ -262,8 +309,8 @@ body .division-topbar {
 	xborder-top: 1px dotted #ccc;
 	xborder-bottom: 1px dotted #ccc;
 	font-size: 35px;
-	margin: 30px 0 15px;
-	padding: 15px 0 0;
+	margin: 0 0 15px;
+	padding: 45px 0 0;
 	text-transform: none;
 	@media screen and (min-width: $break-medium) {
 		font-size: 45px;
@@ -311,19 +358,23 @@ body .division-topbar {
 .article-content blockquote {
 	border-bottom: 1px dotted #ccc;
 	border-top: 1px dotted #ccc;
-	margin-right: 2em;
-	margin-left: -5%;
-	float: left;
-	width: 40%;
+	@media screen and (min-width: $break-small) {
+		margin-right: 2em;
+		margin-left: -5%;
+		float: left;
+		width: 40%;
+	}
 	@media screen and (min-width: $break-xlarge) {
 		margin-left: -15%;
 	}
 }
 .article-content blockquote.right {
-	float: right;
-	margin-left: 2em;
-	margin-right: -5%;
-	text-align: right;
+	@media screen and (min-width: $break-small) {
+		float: right;
+		margin-left: 2em;
+		margin-right: -5%;
+		text-align: right;
+	}
 	@media screen and (min-width: $break-xlarge) {
 		margin-right: -15%;
 	}

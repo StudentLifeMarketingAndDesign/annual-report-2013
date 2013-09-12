@@ -1,5 +1,5 @@
 <div class="menu">
-    <a href="index.php"><img src="{$ThemeDir}/images/logo.gif"></a>
+    <a href="index.php" class="oldcap-logo"><img src="{$ThemeDir}/images/logo.gif"></a>
     <ul id="filters" class="main-nav">
         <li><a href="#" data-filter="*">All</a></li>
         <li><a href="#" data-filter=".Excel">Excel</a></li>
