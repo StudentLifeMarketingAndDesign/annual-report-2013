@@ -89,6 +89,8 @@ body .division-topbar {
 	border: 1px solid #e5e5e5;
 	display: block;
 	background: #fff;
+	position: relative;
+	z-index: 2;
 	@media screen and (min-width: $break-large) {
 		border: none;
 	}
