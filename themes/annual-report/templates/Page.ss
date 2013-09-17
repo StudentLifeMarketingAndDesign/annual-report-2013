@@ -54,23 +54,26 @@
 
     <!-- Isotope -->
     <script src="{$ThemeDir}/js/vendor/jquery.isotope.min.js"></script>
-    <script src="{$ThemeDir}/js/main.js"></script>
 
     <!-- Ajaxify -->
-    <!-- jQuery ScrollTo Plugin
-    <script src="//balupton.github.io/jquery-scrollto/lib/jquery-scrollto.js"></script> -->
+    <!-- jQuery ScrollTo Plugin -->
+    <script src="//balupton.github.io/jquery-scrollto/lib/jquery-scrollto.js"></script>
 
-    <!-- History.js
-    <script src="//browserstate.github.io/history.js/scripts/bundled/html4+html5/jquery.history.js"></script> -->
+   <!--  History.js -->
+    <script src="//browserstate.github.io/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
 
-    <!-- Ajaxify
-    <script src="{$ThemeDir}/js/vendor/ajaxify-html5.js"></script> -->
+    <!-- Ajaxify -->
+    <script src="{$ThemeDir}/js/vendor/ajaxify-html5.js"></script>
 
     <!-- FitVids -->
     <script src="{$ThemeDir}/js/vendor/jquery.fitvids.min.js"></script>
     <script>$(document).ready(function(){$(".article-content").fitVids();});</script>
 
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
+
+    <script src="https://rawgithub.com/desandro/bac18f05eab26ec2ac21/raw/1e017b9843a6ae66b56aa18f2e0bc0a84cf002d7/jquery.nicescroll.js"></script>
+
+    <script src="{$ThemeDir}/js/main-ck.js"></script>
 
 </body>
 </html>

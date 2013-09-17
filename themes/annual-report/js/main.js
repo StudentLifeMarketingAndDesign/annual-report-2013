@@ -14,7 +14,7 @@ $(function() {
         $(this).addClass('active');
         return false;
     });
-});  
+}); 
 
 
 
@@ -46,14 +46,64 @@ jQuery(window).resize(function(){
 }); 
 
 jQuery(document).ready(function($) {
-        // Toggle for nav menu
-        $('.menu-button').click(function(e) {
-            e.preventDefault();
-            showMenu();                         
-        }); 
-        // Toggle for sidebar
-        $('.sidebar-button').click(function(e) {
-            e.preventDefault();
-            showSidebar();                                  
-        });                         
+    // Toggle for nav menu
+    $('.menu-button').click(function(e) {
+        e.preventDefault();
+        showMenu();
+        $(this).text($(this).text() == 'Close' ? 'Menu' : 'Close');                        
+    }); 
+    // Toggle for sidebar
+    $('.sidebar-button').click(function(e) {
+        e.preventDefault();
+        showSidebar();                                  
+    });
+
+
+    //get dimensions
+    if ($(".preview-list").css("z-index") == "901" ){
+        var height = $(window).height();
+        var width = $(window).width();
+        var divisionbarheight = 43;
+        var menuheight = $('.menu').height();
+        var previewheight = height - (menuheight + divisionbarheight);
+
+        $('.preview-list').css({'top': (menuheight + divisionbarheight)+'px'});
+        $('.preview-list').css({'height': (previewheight)+'px'});
+    }
+    if ($(".preview-list").css("z-index") == "911" ){
+        var height = $(window).height();
+        var width = $(window).width();
+        var divisionbarheight = 43;
+        var menuheight = $('.menu').height();
+        var previewheight = height - (menuheight + divisionbarheight);
+        $('.preview-list').css({'top': (43)+'px'});
+        $('.preview-list').css({'height': (height - 43)+'px'});
+    }
+
+    
+    $(window).resize(function() {
+        if ($(".preview-list").css("z-index") == "901" ){
+            var height = $(window).height();
+            var width = $(window).width();
+            var divisionbarheight = 43;
+            var menuheight = $('.menu').height();
+            var previewheight = height - (menuheight + divisionbarheight);
+            $('.preview-list').css({'top': (menuheight + divisionbarheight)+'px'});
+            $('.preview-list').css({'height': (previewheight)+'px'});
+        }
+        if ($(".preview-list").css("z-index") == "911" ){
+            var height = $(window).height();
+            var width = $(window).width();
+            var divisionbarheight = 43;
+            var menuheight = $('.menu').height();
+            var previewheight = height - (menuheight + divisionbarheight);
+            $('.preview-list').css({'top': (43)+'px'});
+            $('.preview-list').css({'height': (height - 43)+'px'});
+        }
+    });
+
 });
+
+
+
+

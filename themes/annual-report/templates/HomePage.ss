@@ -47,7 +47,7 @@
     <section role="main" style="height: 100%;">
         <div class="home-content" style="height: 100%;">
             &nbsp;
-            <img src="{$ThemeDir}/images/dosl-lg.png" alt="" class="dosl" width="400">
+            <img src="{$ThemeDir}/images/dosl-lg.png" alt="" class="dosl-img" width="400">
             <!-- $Content -->
         </div>
     </section>

@@ -11,7 +11,7 @@
   				<% end_if %>
                 <h3 class="preview-title">$MenuTitle.XML</h3>
                 <span class="preview-dept">$Department</span>
-                <p class="preview-excerpt">$Excerpt</p>
+                <!-- <p class="preview-excerpt">$Excerpt</p> -->
             </a>
 		</li>
 		<% end_loop %>
