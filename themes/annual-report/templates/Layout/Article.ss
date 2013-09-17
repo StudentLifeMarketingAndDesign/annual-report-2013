@@ -13,7 +13,7 @@
     </header>
 	<% if $Photo %>
 		<div class="article-img">
-			<img src="$Photo.SetWidth(765).URL" alt="$Title">
+			<img src="$Photo.URL" alt="$Title">
 		</div>
     <% end_if %>
     <div class="article-body clearfix">
