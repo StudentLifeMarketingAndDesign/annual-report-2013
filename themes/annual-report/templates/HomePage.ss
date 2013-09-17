@@ -24,8 +24,9 @@
     </script>
 	<script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="{$ThemeDir}/js/vendor/modernizr-2.5.3.min.js"></script>
 	<!--[if lt IE 9]>
-    	<script src="$ThemeDir}/js/vendor/respond.min.js"></script>
+    	<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
 	<![endif]-->
 
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
@@ -65,11 +66,16 @@
     <script src="{$ThemeDir}/js/vendor/jquery.imagesloaded.min.js"></script>
     <script src="{$ThemeDir}/js/vendor/video.js"></script>
     <script src="{$ThemeDir}/js/vendor/bigvideo.js"></script>
+
     <script>
         $(function() {
-            var BV = new $.BigVideo({useFlashForFirefox:false});
+            var BV = new $.BigVideo();
             BV.init();
-            BV.show('{$ThemeDir}/video/pentacrest.mp4',{ambient:true});
+            if (Modernizr.touch) {
+                BV.show('{$ThemeDir}images/background-pentacrest.jpg');
+            } else {
+                BV.show('{$ThemeDir}/video/pentacrest.mp4',{ambient:true});
+            }
         });
     </script>
 
