@@ -1,6 +1,6 @@
 
 
-<nav class="preview-list clearfix">
+<nav class="preview-list clearfix" role="navigation">
 	<ul id="container">
 		<% loop $Menu(1) %>
 		<li class="item $Challenge $LinkingMode">

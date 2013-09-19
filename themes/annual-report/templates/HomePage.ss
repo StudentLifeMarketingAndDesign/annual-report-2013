@@ -74,7 +74,7 @@
             if (Modernizr.touch) {
                 BV.show('{$ThemeDir}images/background-pentacrest.jpg');
             } else {
-                BV.show('{$ThemeDir}/video/pentacrest.mp4',{ambient:true});
+                BV.show('{$ThemeDir}/video/burge.mp4',{ambient:true});
             }
         });
     </script>
