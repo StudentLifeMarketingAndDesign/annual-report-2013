@@ -23,7 +23,7 @@
 		<div class="article-content">
 			$Content
 		</div>
-		<ul class="socialcount" data-url="$Link" data-share-text="$Title - $AbsoluteLink">
+		<ul class="socialcount" data-url="$AbsoluteLink" data-share-text="$Title - $AbsoluteLink">
 			<li class="facebook">
 				<a href="https://www.facebook.com/sharer/sharer.php?u=$AbsoluteLink" title="Share on Facebook"><span class="social-icon icon-facebook"></span><span class="count">Like</span>
 				</a>
