@@ -438,13 +438,23 @@ body .division-topbar {
 		margin-right: 2em;
 		margin-left: -5%;
 		float: left;
-		width: 50%;
+		width: 45%;
 	}
 	@media screen and (min-width: $break-xlarge) {
 		margin-left: -15%;
 	}
 }
+.article-content blockquote p {
+	color: #0087b7;
+	font-size: 21px;
+	font-style: italic;
+	margin: 15px 0;
+	text-align: right;
+}
 .article-content blockquote.right {
+	& p {
+		text-align: left;
+	}
 	@media screen and (min-width: $break-small) {
 		float: right;
 		margin-left: 2em;
@@ -454,12 +464,6 @@ body .division-topbar {
 	@media screen and (min-width: $break-xlarge) {
 		margin-right: -15%;
 	}
-}
-.article-content blockquote p {
-	color: #0087b7;
-	font-size: 21px;
-	font-style: italic;
-	margin: 15px 0;
 }
 .article-content .full-image {
 	border-bottom: 1px dotted #ccc;
