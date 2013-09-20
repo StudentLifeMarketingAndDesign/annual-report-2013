@@ -26,6 +26,7 @@
 	    doc.removeAttribute('class', 'no-js');
 	    doc.setAttribute('class', 'js');
 	</script>
+	<script src="{$ThemeDir}/js/vendor/modernizr-2.5.3.min.js"></script>
 
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
