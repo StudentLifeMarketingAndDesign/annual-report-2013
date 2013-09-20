@@ -32,6 +32,8 @@
 
 <body class="$ClassName">
 
+<a href="#article" class="skipto visuallyhidden">Skip to main content</a>
+
 <% include DivisionBar %>
 <div id="content-wrapper" class="container clearfix">
     <div class="off-canvas-navigation">
@@ -43,7 +45,7 @@
     	<% include Menu %>
         <% include PreviewList %>                                         
     </div>
-    <section role="main">
+    <section id="main">
 		$Layout
 	</section>
 </div>

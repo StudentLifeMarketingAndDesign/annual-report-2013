@@ -9,8 +9,13 @@
 				<% if $Photo %>
   					<img src="$Photo.CroppedImage(100,100).URL" class="preview-thumb" alt="$Title">
   				<% end_if %>
+  				
                 <h3 class="preview-title">$MenuTitle.XML</h3>
-                <span class="preview-dept">$Department</span>
+
+                <% if $Department %>
+                	<span class="preview-dept">$Department</span>
+                <% end_if %>
+
                 <!-- <p class="preview-excerpt">$Excerpt</p> -->
             </a>
 		</li>

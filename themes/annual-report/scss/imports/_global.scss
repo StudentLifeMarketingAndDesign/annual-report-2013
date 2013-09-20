@@ -26,6 +26,18 @@ img.right {margin-left: 1em; margin-bottom: 1em;}
 .text-justify {text-align: justify;}
 .uppercase	{text-transform: uppercase;}
 
+.skipto:focus {
+	clip: auto;
+	position: fixed;
+	top: 10%;
+	left: 45%;
+	z-index: 5000;
+	padding: 1%;
+	background: #fff;
+	height: auto;
+	width: auto;
+}
+
 .two-col {
 	-webkit-column-count: 2;
 	   -moz-column-count: 2;

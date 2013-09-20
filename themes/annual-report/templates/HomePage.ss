@@ -45,7 +45,7 @@
         <% include Menu %>
         <% include PreviewList %>                                         
     </div>
-    <section role="main" style="height: 100%;">
+    <section id="main" role="main" style="height: 100%;">
         <div class="home-content" style="height: 100%;">
             &nbsp;
             <img src="{$ThemeDir}/images/dosl-lg.png" alt="" class="dosl-img" width="400">

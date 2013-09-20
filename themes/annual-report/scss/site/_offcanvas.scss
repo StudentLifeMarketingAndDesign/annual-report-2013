@@ -2,7 +2,7 @@
 	overflow: hidden;
 }
 
-[role="main"]:before {
+#main:before {
 	content: " ";
 	position: absolute;
 	z-index: -1;
@@ -13,7 +13,7 @@
 	background: rgba(0,0,0,.03);	
 }
 #menu,
-[role="main"] {
+#main {
 	-webkit-transition: .2s all ease;
 	-moz-transition: .2s all ease;
 	-o-transition: .2s all ease;		
@@ -30,7 +30,7 @@
 	padding-bottom: 25em;
 	z-index: 2;	
 }
-.js [role="main"] {
+.js #main {
 	margin-left: 0;
 	box-shadow: -10px 0 35px rgba(0,0,0,.1);
 	float: left;
@@ -41,16 +41,16 @@
 	margin-left: 0;	
 	width: 80%;
 }
-.active-nav [role="main"]{
+.active-nav #main{
 	margin-right: -100%;
 }
 .active-sidebar #menu {	
 	margin-left: -200%;
 }
-.active-sidebar [role="main"] {
+.active-sidebar #main {
 	margin-left: -90%;	
 }
-.active-nav [role="main"] {
+.active-nav #main {
 	-webkit-transition: .1s all ease;
 	-moz-transition: .1s all ease;
 	-o-transition: .1s all ease;		
@@ -112,14 +112,14 @@ a.menu-button:hover {
 		width: 27%;	
 		margin-left: 0;
 	}
-	.js [role="main"] {
+	.js #main {
 		width: 73%;
 		float: left;
 	}			
 	.active-sidebar #menu {	
 		margin-left: -100%;
 	}
-	.active-sidebar [role="main"] {
+	.active-sidebar #main {
 		margin-left: 0;
 		width: 60%;
 	}		
@@ -129,7 +129,7 @@ a.menu-button:hover {
 	.js #menu {
 		width: 33%;	
 	}
-	.js [role="main"] {
+	.js #main {
 		width: 67%;
 	}						
 }
