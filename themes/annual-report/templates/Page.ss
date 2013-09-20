@@ -50,8 +50,9 @@
 	</section>
 </div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="{$ThemeDir}/js/plugins-ck.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script src="{$ThemeDir}/js/plugins-ck.js"></script>
 
     <!-- Ajaxify -->
     <script src="{$ThemeDir}/js/vendor/ajaxify-html5.js"></script>
@@ -60,7 +61,8 @@
     <script src="{$ThemeDir}/js/vendor/jquery.fitvids.min.js"></script>
     <script>$(document).ready(function(){$(".article-content").fitVids();});</script>
 
-    <script src="{$ThemeDir}/js/main-ck.js"></script>
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
+
+    <script src="{$ThemeDir}/js/main-ck.js"></script>
 </body>
 </html>
