@@ -72,7 +72,7 @@
             var BV = new $.BigVideo();
             BV.init();
             if (Modernizr.touch) {
-                BV.show('{$ThemeDir}images/background-pentacrest.jpg');
+                BV.show('{$ThemeDir}/images/background-pentacrest.jpg');
             } else {
                 BV.show('{$ThemeDir}/video/imu.mp4',{ambient:true});
             }
