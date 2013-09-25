@@ -1,7 +1,7 @@
-//@codekit-append "/vendor/jquery.isotope.min.js"
-//@codekit-append "/vendor/jquery-scrollto.js"
-//@codekit-append "/vendor/jquery.history.js"
-//@codekit-append "/vendor/socialcount.min.js"
+//@codekit-append "/plugins/jquery.isotope.min.js"
+//@codekit-append "/plugins/jquery-scrollto.js"
+//@codekit-append "/plugins/jquery.history.js"
+//@codekit-append "/plugins/socialcount.min.js"
 
 /* **********************************************
      Begin jquery.isotope.min.js

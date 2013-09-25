@@ -26,7 +26,7 @@
 	    doc.removeAttribute('class', 'no-js');
 	    doc.setAttribute('class', 'js');
 	</script>
-	<script src="{$ThemeDir}/js/vendor/modernizr-2.5.3.min.js"></script>
+	<script src="{$ThemeDir}/js/plugins/modernizr-2.5.3.min.js"></script>
 
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
@@ -56,14 +56,15 @@
 	<script src="{$ThemeDir}/js/plugins-ck.js"></script>
 
     <!-- Ajaxify -->
-    <script src="{$ThemeDir}/js/vendor/ajaxify-html5.js"></script>
+    <script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
 
     <!-- FitVids -->
-    <script src="{$ThemeDir}/js/vendor/jquery.fitvids.min.js"></script>
+    <script src="{$ThemeDir}/js/plugins/jquery.fitvids.min.js"></script>
     <script>$(document).ready(function(){$(".article-content").fitVids();});</script>
 
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
 
     <script src="{$ThemeDir}/js/main-ck.js"></script>
+    <script src="{$ThemeDir}/js/plugins/pace.min.js"></script>
 </body>
 </html>

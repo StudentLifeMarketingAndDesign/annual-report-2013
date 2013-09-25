@@ -346,15 +346,12 @@ body .division-topbar {
 	margin-top: 0.5em;
 	margin-bottom: 0.2em;
 	line-height: 1.4;
-	@media screen and (min-width: $break-medium) {
+	@media screen and (min-width: $break-xlarge) {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
-	}
-	@media screen and (min-width: $break-large) {
-		-webkit-line-clamp: 4;
 	}
 }
 
@@ -485,31 +482,6 @@ body .division-topbar {
 	font-family: Georgia;
 }
 
-/* Spinner */
-.spinner {
-	background-color: #212121;
-	background-color: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	width: 60px;
-	height: 60px;
-	left: 50%;
-	top: 200px;
-	margin-left: -30px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	opacity: 0;
-}
-.spinner img {
-	display: block;
-	margin: 14px auto;
-}
-.loading .spinner {
-	opacity: 1;
-}
-
 
 /* Dark Theme
 .menu {
@@ -534,4 +506,20 @@ body .division-topbar {
 .preview-list ul li {border-bottom: 1px solid #333;}
 .preview-link:hover {background: #000;}
  */
+.pace .pace-progress {
+  background: #ffce39;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  height: 2px;
 
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+
+.pace-inactive {
+  display: none;
+}

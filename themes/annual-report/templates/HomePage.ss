@@ -58,25 +58,36 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
     <!-- Isotope -->
-    <script src="{$ThemeDir}/js/vendor/jquery.isotope.min.js"></script>
+    <script src="{$ThemeDir}/js/plugins/jquery.isotope.min.js"></script>
     <script src="{$ThemeDir}/js/main.js"></script>
 
     <!-- Big Video -->
-    <script src="{$ThemeDir}/js/vendor/jquery-ui-1.8.22.custom.min.js"></script>
-    <script src="{$ThemeDir}/js/vendor/jquery.imagesloaded.min.js"></script>
-    <script src="{$ThemeDir}/js/vendor/video.js"></script>
-    <script src="{$ThemeDir}/js/vendor/bigvideo.js"></script>
+    <script src="{$ThemeDir}/js/plugins/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="{$ThemeDir}/js/plugins/jquery.imagesloaded.min.js"></script>
+    <script src="{$ThemeDir}/js/plugins/video.js"></script>
+    <script src="{$ThemeDir}/js/plugins/bigvideo.js"></script>
 
     <script>
+
         $(function() {
+            var image = new Array ();
+            image[0] = "{$ThemeDir}/video/imu.mp4";
+            image[1] = "{$ThemeDir}/video/burge.mp4";
+            image[2] = "{$ThemeDir}/video/pentacrest.mp4";
+            image[3] = "{$ThemeDir}/video/rec.mp4";
+            var size = image.length
+            var x = Math.floor(size*Math.random())
+
             var BV = new $.BigVideo();
             BV.init();
             if (Modernizr.touch) {
                 BV.show('{$ThemeDir}/images/background-pentacrest.jpg');
             } else {
-                BV.show('{$ThemeDir}/video/imu.mp4',{ambient:true});
+                BV.show(image[x],{ambient:true});
             }
         });
+
+        
     </script>
 
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>

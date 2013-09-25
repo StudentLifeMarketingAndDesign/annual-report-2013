@@ -1,8 +1,5 @@
 
 <article id="article" class="article" role="main">
-	<div class="spinner">
-		<img src="{$ThemeDir}/images/spinner.gif" alt="">
-	</div>
 
 	<header class="article-header">
 		<h1 class="article-title">$Title</h1>
