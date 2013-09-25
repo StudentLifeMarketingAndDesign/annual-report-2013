@@ -24,7 +24,7 @@
     </script>
 	<script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="{$ThemeDir}/js/vendor/modernizr-2.5.3.min.js"></script>
+    <script src="{$ThemeDir}/js/plugins/modernizr-2.5.3.min.js"></script>
 	<!--[if lt IE 9]>
     	<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
 	<![endif]-->
@@ -68,7 +68,6 @@
     <script src="{$ThemeDir}/js/plugins/bigvideo.js"></script>
 
     <script>
-
         $(function() {
             var image = new Array ();
             image[0] = "{$ThemeDir}/video/imu.mp4";
@@ -86,8 +85,6 @@
                 BV.show(image[x],{ambient:true});
             }
         });
-
-        
     </script>
 
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>

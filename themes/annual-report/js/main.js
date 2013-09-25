@@ -62,17 +62,24 @@ jQuery(document).ready(function($) {
 
 
     //get dimensions
+    if ($(".preview-list").css("z-index") == "900" ){
+        var height = $(window).height();
+        var width = $(window).width();
+        var divisionbarheight = 43;
+        var navheight = $('.off-canvas-navigation').height();
+        var previewheight = height - (navheight + divisionbarheight);
+        $('.preview-list').css({'height': (previewheight)+'px'});
+    }
     if ($(".preview-list").css("z-index") == "901" ){
         var height = $(window).height();
         var width = $(window).width();
         var divisionbarheight = 43;
         var menuheight = $('.menu').height();
         var previewheight = height - (menuheight + divisionbarheight);
-
-        $('.preview-list').css({'top': (menuheight + divisionbarheight)+'px'});
-        $('.preview-list').css({'height': (previewheight)+'px'});
+        $('.preview-list').css({'top': (43)+'px'});
+        $('.preview-list').css({'height': (height - 43)+'px'});
     }
-    if ($(".preview-list").css("z-index") == "911" ){
+    if ($(".preview-list").css("z-index") == "902" ){
         var height = $(window).height();
         var width = $(window).width();
         var divisionbarheight = 43;
@@ -82,18 +89,25 @@ jQuery(document).ready(function($) {
         $('.preview-list').css({'height': (height - 43)+'px'});
     }
 
-    
     $(window).resize(function() {
+        if ($(".preview-list").css("z-index") == "900" ){
+            var height = $(window).height();
+            var width = $(window).width();
+            var divisionbarheight = 43;
+            var navheight = $('.off-canvas-navigation').height();
+            var previewheight = height - (navheight + divisionbarheight);
+            $('.preview-list').css({'height': (previewheight)+'px'});
+        }
         if ($(".preview-list").css("z-index") == "901" ){
             var height = $(window).height();
             var width = $(window).width();
             var divisionbarheight = 43;
             var menuheight = $('.menu').height();
             var previewheight = height - (menuheight + divisionbarheight);
-            $('.preview-list').css({'top': (menuheight + divisionbarheight)+'px'});
-            $('.preview-list').css({'height': (previewheight)+'px'});
+            $('.preview-list').css({'top': (43)+'px'});
+            $('.preview-list').css({'height': (height - 43)+'px'});
         }
-        if ($(".preview-list").css("z-index") == "911" ){
+        if ($(".preview-list").css("z-index") == "902" ){
             var height = $(window).height();
             var width = $(window).width();
             var divisionbarheight = 43;

@@ -51,20 +51,16 @@
 	</section>
 </div>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
 	<script src="{$ThemeDir}/js/plugins-ck.js"></script>
 
     <!-- Ajaxify -->
     <script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
 
-    <!-- FitVids -->
-    <script src="{$ThemeDir}/js/plugins/jquery.fitvids.min.js"></script>
-    <script>$(document).ready(function(){$(".article-content").fitVids();});</script>
+    <script src="{$ThemeDir}/js/main-ck.js"></script>
 
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
 
-    <script src="{$ThemeDir}/js/main-ck.js"></script>
-    <script src="{$ThemeDir}/js/plugins/pace.min.js"></script>
 </body>
 </html>
