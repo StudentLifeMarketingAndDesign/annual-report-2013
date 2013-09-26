@@ -49,43 +49,25 @@
         <div class="home-content" style="height: 100%;">
             &nbsp;
             <img src="{$ThemeDir}/images/dosl-lg.png" alt="" class="dosl-img" width="400">
-            <!-- $Content -->
         </div>
     </section>
 </div>
+<div id='background-video' class='visible-md visible-lg'>
+    <video  autoplay loop preload class='fill' width='1080' height='720'>
+        <source src="{$ThemeDir}/video/imu_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        <source src="video/ENVOY_TLI_1_2.webm" type='video/webm; codecs="vp8, vorbis"' />
+        <source src="video/ENVOY_TLI_1_2.ogv" type='video/ogg; codecs="theora, vorbis"' />
+    </video>
+</div>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
     <!-- Isotope -->
     <script src="{$ThemeDir}/js/plugins/jquery.isotope.min.js"></script>
     <script src="{$ThemeDir}/js/main.js"></script>
+    <script src="{$ThemeDir}/js/plugins/fill_resize.js"></script>
 
-    <!-- Big Video -->
-    <script src="{$ThemeDir}/js/plugins/jquery-ui-1.8.22.custom.min.js"></script>
-    <script src="{$ThemeDir}/js/plugins/jquery.imagesloaded.min.js"></script>
-    <script src="{$ThemeDir}/js/plugins/video.js"></script>
-    <script src="{$ThemeDir}/js/plugins/bigvideo.js"></script>
 
-    <script>
-        $(function() {
-            var image = new Array ();
-            image[0] = "{$ThemeDir}/video/imu_hd.mp4";
-            image[1] = "{$ThemeDir}/video/burge.mp4";
-            image[2] = "{$ThemeDir}/video/pentacrest_hd.mp4";
-            image[3] = "{$ThemeDir}/video/rec_hd.mp4";
-            var size = image.length
-            var x = Math.floor(size*Math.random())
-
-            var BV = new $.BigVideo();
-            BV.init();
-            if (Modernizr.touch) {
-                BV.show('{$ThemeDir}/images/fallback.jpg');
-            } else {
-                BV.show(image[x],{ambient:true});
-            }
-        });
-    </script>
 
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
 

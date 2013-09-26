@@ -1,5 +1,5 @@
 <div class="menu">
-    <a href="index.php" class="oldcap-logo">
+    <a href="$ABsoluteURL" class="oldcap-logo">
         <img src="{$ThemeDir}/images/capitol.gif" alt="University of Iowa Capitol">
         <strong class="year"><span>2013</span></strong>
         <h1 class="heading-main">Annual<br>Report</h1>
