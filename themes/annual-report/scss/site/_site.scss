@@ -243,6 +243,7 @@ body .division-topbar {
 	background-color: rgba(0,0,0,.01);
 	overflow: auto;
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 	height: 100%;
 	position: relative;
 	z-index: 900;

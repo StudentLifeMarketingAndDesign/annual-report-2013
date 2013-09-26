@@ -9,6 +9,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
 
+	<!-- Open Graph -->
+	<meta property="og:type"	 content="article"> 
+	<meta property="og:url"		 content="$AbsoluteLink">
+	<meta property="og:site_name"	 content="2013 Division of Student Life Annual Report">
+	<meta property="og:image"	 content="$Photo.AbsoluteURL">
+	<meta property="og:title"	 content="$Title">
+	<meta property="og:description"  content="$Excerpt">
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
 	<link rel="stylesheet" href="{$BaseHref}division-bar/css/_division-bar.css" />
