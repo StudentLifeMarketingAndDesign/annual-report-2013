@@ -355,6 +355,9 @@ body .division-topbar {
 
 /* ARTICLE
 ========================================================================== */
+#article:focus {
+	background: red;
+}
 .article-body, .article-header {
 	margin: 0 auto;
 	width: 80%;

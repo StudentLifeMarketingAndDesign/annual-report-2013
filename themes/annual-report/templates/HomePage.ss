@@ -70,17 +70,17 @@
     <script>
         $(function() {
             var image = new Array ();
-            image[0] = "{$ThemeDir}/video/imu.mp4";
+            image[0] = "{$ThemeDir}/video/imu_hd.mp4";
             image[1] = "{$ThemeDir}/video/burge.mp4";
             image[2] = "{$ThemeDir}/video/pentacrest.mp4";
-            image[3] = "{$ThemeDir}/video/rec.mp4";
+            image[3] = "{$ThemeDir}/video/rec_hd.mp4";
             var size = image.length
             var x = Math.floor(size*Math.random())
 
             var BV = new $.BigVideo();
             BV.init();
             if (Modernizr.touch) {
-                BV.show('{$ThemeDir}/images/background-pentacrest.jpg');
+                BV.show('{$ThemeDir}/images/fallback.jpg');
             } else {
                 BV.show(image[x],{ambient:true});
             }

@@ -33,7 +33,7 @@
 
 <body class="$ClassName">
 
-<a href="#article" class="skipto visuallyhidden">Skip to main content</a>
+<a href="#article" class="visuallyhidden focusable">Skip to main content</a>
 
 <% include DivisionBar %>
 <div id="content-wrapper" class="container clearfix">

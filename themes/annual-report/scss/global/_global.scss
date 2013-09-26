@@ -26,18 +26,6 @@ img.right {margin-left: 1em; margin-bottom: 1em;}
 .text-justify {text-align: justify;}
 .uppercase	{text-transform: uppercase;}
 
-.skipto:focus {
-	clip: auto;
-	position: fixed;
-	top: 10%;
-	left: 45%;
-	z-index: 5000;
-	padding: 1%;
-	background: #fff;
-	height: auto;
-	width: auto;
-}
-
 .two-col {
 	-webkit-column-count: 2;
 	   -moz-column-count: 2;
@@ -59,5 +47,5 @@ img.right {margin-left: 1em; margin-bottom: 1em;}
 .ir:before { content: "";display: block;width: 0;height: 100%;}
 .hidden {display: none !important;visibility: hidden;}
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
-.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto;}
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: absolute; width: auto;z-index: 1005;}
 .invisible { visibility: hidden;}
