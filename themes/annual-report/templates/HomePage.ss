@@ -72,7 +72,7 @@
             var image = new Array ();
             image[0] = "{$ThemeDir}/video/imu_hd.mp4";
             image[1] = "{$ThemeDir}/video/burge.mp4";
-            image[2] = "{$ThemeDir}/video/pentacrest.mp4";
+            image[2] = "{$ThemeDir}/video/pentacrest_hd.mp4";
             image[3] = "{$ThemeDir}/video/rec_hd.mp4";
             var size = image.length
             var x = Math.floor(size*Math.random())
