@@ -24,6 +24,7 @@ body {
 	}
 }
 body .division-topbar {
+	z-index: 1;
 	@media screen and (min-width: 650px) {
 		position: fixed;
 		top: 0;

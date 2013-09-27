@@ -26,7 +26,7 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="{$ThemeDir}/js/plugins/modernizr-2.5.3.min.js"></script>
 	<!--[if lt IE 9]>
-    	<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
+    	<script src="{$ThemeDir}/js/plugins/respond.min.js"></script>
 	<![endif]-->
 
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
@@ -55,8 +55,8 @@
 <div id='background-video' class='visible-md visible-lg'>
     <video  autoplay loop preload class='fill' width='1080' height='720'>
         <source src="{$ThemeDir}/video/imu_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-        <source src="video/ENVOY_TLI_1_2.webm" type='video/webm; codecs="vp8, vorbis"' />
-        <source src="video/ENVOY_TLI_1_2.ogv" type='video/ogg; codecs="theora, vorbis"' />
+        <source src="{$ThemeDir}/video/imu_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
+        <source src="{$ThemeDir}/video/imu_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
     </video>
 </div>
 

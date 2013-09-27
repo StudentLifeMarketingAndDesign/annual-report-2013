@@ -23,8 +23,8 @@
 
 	<!-- JS -->
 	<!--[if lt IE 9]>
-		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
-		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
+		<script src="{$ThemeDir}/js/plugins/html5shiv.js"></script>
+		<script src="{$ThemeDir}/js/plugins/respond.min.js"></script>
 
 	<![endif]-->
 	<script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
