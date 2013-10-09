@@ -5,7 +5,7 @@
 	<% base_tag %>
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
 
@@ -23,10 +23,9 @@
 
 	<!-- JS -->
 	<!--[if lt IE 9]>
-		<script src="{$ThemeDir}/js/plugins/html5shiv.js"></script>
 		<script src="{$ThemeDir}/js/plugins/respond.min.js"></script>
-
 	<![endif]-->
+	
 	<script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript">
@@ -66,7 +65,7 @@
     <!-- Ajaxify -->
     <script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
 
-    <script src="{$ThemeDir}/js/main-ck.js"></script>
+    <script src="{$ThemeDir}/js/main.js"></script>
 
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
 

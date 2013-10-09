@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html lang="$ContentLocale" id="doc" class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="$ContentLocale" id="doc"> <!--<![endif]-->
+<!--[if IE 8]>         <html lang="$ContentLocale" id="doc" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="$ContentLocale" id="doc" class="no-js"> <!--<![endif]-->
 <head>
 	<% base_tag %>
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
-	<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
     <link rel="stylesheet" href="{$BaseHref}division-bar/css/_division-bar.css" />
 
 	<!-- JS -->
-    <script type="text/javascript">
-        var doc = document.getElementById('doc');
-        doc.removeAttribute('class', 'no-js');
-        doc.setAttribute('class', 'js');
-    </script>
 	<script type="text/javascript" src="//use.typekit.net/ocu2ncd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="{$ThemeDir}/js/plugins/modernizr-2.5.3.min.js"></script>
@@ -32,7 +24,7 @@
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
 
-<body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
+<body class="$ClassName">
 
 <% include DivisionBar %>
 <div id="content-wrapper" class="container clearfix" style="height: 100%;">
@@ -54,9 +46,10 @@
 </div>
 <div id='background-video' class='visible-md visible-lg'>
     <video  autoplay loop preload class='fill' width='1080' height='720'>
-        <source src="{$ThemeDir}/video/imu_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-        <source src="{$ThemeDir}/video/imu_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
-        <source src="{$ThemeDir}/video/imu_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
+        <source class="mp4" src="{$ThemeDir}/video/imu_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        <source class="webm" src="{$ThemeDir}/video/imu_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
+        <source class="ogv" src="{$ThemeDir}/video/imu_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
+        <img src="{$ThemeDir}/images/fallback.jpg" />
     </video>
 </div>
 
@@ -67,7 +60,21 @@
     <script src="{$ThemeDir}/js/main.js"></script>
     <script src="{$ThemeDir}/js/plugins/fill_resize.js"></script>
 
+    <script>
+        $(function() {
+            var image = new Array ();
+            image[0] = "imu_hd";
+            image[1] = "burge";
+            image[2] = "pentacrest_hd";
+            image[3] = "rec_hd";
+            var size = image.length;
+            var x = Math.floor(size*Math.random());
+            $('.fill source.mp4').attr("src",'{$ThemeDir}/video/'+image[x]+'.mp4');
+            $('.fill source.webm').attr("src",'{$ThemeDir}/video/'+image[x]+'.webm');
+            $('.fill source.ogv').attr("src",'{$ThemeDir}/video/'+image[x]+'.ogv');
 
+        });
+    </script>
 
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
 

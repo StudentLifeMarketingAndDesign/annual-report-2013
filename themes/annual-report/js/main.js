@@ -1,21 +1,25 @@
 $(function() {
+
+    // Isotope
     var $container = $('#container');
+    var large_mode = 'only screen and (min-width: 980px)';
 
-    $container.isotope({
-        itemSelector : '.item',
-        layoutMode : 'straightDown'
-    });
+    // Only use Isotope if larger than 980px
+    if (Modernizr.mq(large_mode)) { 
+        $container.isotope({
+            itemSelector : '.item',
+            layoutMode : 'straightDown'
+        });
 
-    // filter items when filter link is clicked
-    $('#filters a').click(function(){
-        var selector = $(this).attr('data-filter');
-        $container.isotope({ filter: selector });
-        $('#filters a').removeClass('active');
-        $(this).addClass('active');
-        return false;
-    });
-
-    
+        // filter items when filter link is clicked
+        $('#filters a').click(function(){
+            var selector = $(this).attr('data-filter');
+            $container.isotope({ filter: selector });
+            $('#filters a').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        });
+    }
 }); 
 
 
