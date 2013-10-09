@@ -45,7 +45,7 @@
     </section>
 </div>
 <div id='background-video' class='visible-md visible-lg'>
-    <video  autoplay loop preload class='fill' width='1080' height='720'>
+    <video  autoplay loop preload class='fill'>
         <source class="mp4" src="{$ThemeDir}/video/imu_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
         <source class="webm" src="{$ThemeDir}/video/imu_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
         <source class="ogv" src="{$ThemeDir}/video/imu_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
@@ -58,13 +58,13 @@
     <!-- Isotope -->
     <script src="{$ThemeDir}/js/plugins/jquery.isotope.min.js"></script>
     <script src="{$ThemeDir}/js/main.js"></script>
-    <script src="{$ThemeDir}/js/plugins/fill_resize.js"></script>
+    <!--<script src="{$ThemeDir}/js/plugins/fill_resize.js"></script>-->
 
     <script>
         $(function() {
             var image = new Array ();
             image[0] = "imu_hd";
-            image[1] = "burge";
+            image[1] = "burge_hd";
             image[2] = "pentacrest_hd";
             image[3] = "rec_hd";
             var size = image.length;
