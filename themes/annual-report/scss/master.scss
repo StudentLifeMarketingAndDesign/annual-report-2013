@@ -1,38 +1,47 @@
-/* Global
+
+/* Configuration
 -------------------------------------------*/
-@import "global/_config.scss";
-@import "global/_mixins.scss";
-@import "global/_normalize.scss";
-@import "global/_typography.scss";
-@import "global/_global.scss";
+@import "_config";
 
 
-/* Elements
+/* Global Settings
 -------------------------------------------*/
-/*@import "imports/_buttons.scss";*/
-/*@import "imports/_forms.scss";*/
-/*@import "imports/_grid-bootstrap.scss";*/
-/*@import "imports/_grid-simple.scss";*/
-/*@import "imports/_tables.scss";*/
+@import "global/_mixins";
+@import "global/_normalize";
+@import "global/_typography";
+@import "global/_global";
+
+
+/* Element Imports
+-------------------------------------------*/
+/*@import "elements/_button-bootstrap";*/
+/*@import "elements/_form-bootstrap";*/
+/*@import "elements/_grid-bootstrap";*/
+/*@import "elements/_grid-simple";*/
+/*@import "elements/_tables";*/
 
 
 /* Plugins
 -------------------------------------------*/ 
-@import "plugins/_bigvideo.scss";
-@import "plugins/_isotope.scss";
-@import "plugins/_socialcount-with-icons.scss";
+/*@import "plugins/_bigvideo";*/
+@import "plugins/_isotope";
+@import "plugins/_perfect-scrollbar";
+@import "plugins/_socialcount-with-icons";
 
 
 /* Layout
 -------------------------------------------*/ 
-@import "site/_offcanvas.scss";
+@import "site/_offcanvas";
+@import "site/_home";
+@import "site/_previewlist";
+@import "site/_article";
 
 
 /* Site specific styles
 -------------------------------------------*/
-@import "site/_site.scss";
+@import "site/_site";
 
 
 /* Print
 -------------------------------------------*/
-@import "global/_print.scss";
+@import "global/_print";
