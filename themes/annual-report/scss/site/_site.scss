@@ -51,71 +51,72 @@ body .division-topbar {
 
 /* MENU
 ========================================================================== */
+.year-wrapper {
+	margin: 15px 0;
+}
 .year {
-	background: #fff;
-	color: #888;
+	color: #fff;
 	display: block;
 	font-family: georgia;
-	font-size: 15px;
+	font-size: 14px;
 	font-style: italic;
 	font-weight: normal;
-	margin: 0 auto;
-	margin-top: 5px;
+	line-height: 0.5;
 	text-align: center;
-	border-top: 1px solid #ddd;
-	width: 45%;
-	@media screen and (min-width: $break-medium) {
-		font-size: 13px;
-		width: 60%;
 	}
-	@media screen and (min-width: $break-large) {
-		font-size: 11px;
-		width: 80%;
-	}
-	@media screen and (max-height: 600px) {
-		margin-top: 20px;
-	}
-}
 .year span {
-	background: #fff;
 	display: inline-block;
-	xmargin-bottom: 10px;
-	padding: 0 10px;
-	position: relative;
-	top: -14px;
-	@media screen and (min-width: $break-medium) {
-		top: -9px;
-	}
+	position: relative;  
 }
+.year span:before,
+.year span:after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	border-bottom: 1px solid white;
+	top: 0;
+	width: 15px;
+}
+.year span:before {
+	right: 100%;
+	margin-right: 8px;
+}
+.year span:after {
+	left: 100%;
+	margin-left: 8px;
+}
+
+
 .heading-main {
-	font-family: georgia, serif;
+	color: #fff;
+	xfont-family: georgia, serif;
 	font-size: 28px;
-	font-style: italic;
-	line-height: 1.1;
+	xfont-style: italic;
+	font-weight: normal;
+	line-height: 1.2;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
 	@media screen and (min-width: $break-large) {
-		font-size: 17px;
+		font-size: 24px;
 	}
 }
 .heading-sec {
-	color: #888;
-	font-size: 13px;
+	color: #fff;
+	font-size: 12px;
 	font-weight: normal;
+	xletter-spacing: 1px;
 	line-height: 1.1;
-	margin: 6px 0 20px;
+	margin-top: 8px;
 	padding: 0;
 	text-align: center;
 	@media screen and (min-width: $break-large) {
-		font-size: 9px;
-		font-weight: bold;
+		font-size: 10px;
 	}
 }
 .oldcap-logo {
 	display: block;
-	background: #fff;
 	position: relative;
 	text-decoration: none;
 	z-index: 2;
@@ -123,14 +124,12 @@ body .division-topbar {
 		text-decoration: none;
 	}
 	@media screen and (min-width: $break-large) {
-		border: none;
-		border-bottom: 1px solid #e5e5e5;
+		padding: 10px 0;
 	}
 }
 .oldcap-logo img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 5px auto;
 	@media screen and (max-height: 600px) {
 		display: none;
 	}
@@ -169,8 +168,16 @@ body .division-topbar {
 		z-index: 1000;
 	}
 	@media screen and (min-width: $break-large) {
-		background: #fff;
-		border-right: 1px solid #e5e5e5;
+		background: #00baa6; /* Old browsers */
+		background: -moz-linear-gradient(top,  #00baa6 0%, #0088cc 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00baa6), color-stop(100%,#0088cc)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #00baa6 0%,#0088cc 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #00baa6 0%,#0088cc 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #00baa6 0%,#0088cc 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #00baa6 0%,#0088cc 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00baa6', endColorstr='#0088cc',GradientType=0 ); /* IE6-9 */
+
+		xborder-right: 1px solid #e5e5e5;
 		display: block;
 		left: 0;
 		bottom: 0;
@@ -180,27 +187,29 @@ body .division-topbar {
 	}
 }
 .main-nav {
+	border-top: 1px solid #fff;
+	border-top: 1px solid rgba(255,255,255,.35);
 	display: none;
 	list-style: none;
 	margin: 0;
 	margin-top: -2px;
 	padding: 0;
 	& li {
-		border-bottom: 1px solid #e5e5e5;
+		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid rgba(255,255,255,.35);
 	}
 	& a {
-		color: #888;
+		color: #fff;
 		display: block;
 		font-family: $heading-font;
 		font-size: 14px;
-		letter-spacing: 1px;
+		letter-spacing: 2px;
 		padding: 9px 0;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
 		&:hover, &:focus {
-			background-color: #eee;
-			color: #333;
+			background-color: rgba(255,255,255,.15);
 		}
 	}
 	@media screen and (min-width: $break-large) {

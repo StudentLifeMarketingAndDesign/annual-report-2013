@@ -1,7 +1,7 @@
 <div class="menu">
     <a href="/annual-report-2013/" class="oldcap-logo">
-        <img src="{$ThemeDir}/images/capitol.gif" alt="University of Iowa Capitol">
-        <strong class="year"><span>2013</span></strong>
+        <img src="{$ThemeDir}/images/capitol.png" alt="University of Iowa Capitol">
+        <p class="year-wrapper"><strong class="year"><span>2013</span></strong></p>
         <h1 class="heading-main">Annual<br>Report</h1>
         <h2 class="heading-sec">Division of Student Life</h2>
         <!-- <span class="logo-block"></span> -->
