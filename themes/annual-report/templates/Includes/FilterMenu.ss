@@ -1,12 +1,12 @@
 <div class="menu">
     <a href="/annual-report-2013/" class="oldcap-logo">
         <img src="{$ThemeDir}/images/capitol.png" alt="University of Iowa Capitol">
-        <p class="year-wrapper"><strong class="year"><span>2013</span></strong></p>
-        <h1 class="heading-main">Annual<br>Report</h1>
+        <strong class="year"><span>2013</span></strong>
+        <h1 class="heading-main">Annual<span class="break"> Report</h1>
         <h2 class="heading-sec">Division of Student Life</h2>
         <!-- <span class="logo-block"></span> -->
     </a>
-    <ul id="filters" class="main-nav">
+    <ul id="filters" class="main-nav clearfix">
         <li><a href="#all" data-filter="*" class="active">All</a></li>
         <li><a href="#excel" data-filter=".Excel">Excel</a></li>
         <li><a href="#stretch" data-filter=".Stretch">Stretch</a></li>

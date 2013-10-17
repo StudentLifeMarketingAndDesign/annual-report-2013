@@ -41,16 +41,17 @@
 
 	<div id="content-wrapper" class="clearfix">
 
-	    <% include OffCanvasNav %>
+	    <!--<% include OffCanvasNav %>-->
+
+	    <article id="main" class="article" role="main">
+	    	$Layout
+		</article>
 
 	    <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
 	    	<% include FilterMenu %>
 	        <% include PreviewList %>                                         
 	    </section>
 
-	    <article id="main" class="article" role="main">
-	    	$Layout
-		</article>
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

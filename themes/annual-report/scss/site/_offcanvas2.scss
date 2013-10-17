@@ -1,0 +1,110 @@
+.affix-top {
+	@media screen and (min-width: $break-large) {
+		position: absolute;
+		top: 0;
+	}
+}
+.affix {
+	@media screen and (min-width: $break-large) {
+		position: fixed;
+		top: 0;
+	}
+}
+
+#menu, #main {
+	-webkit-transition: .2s all ease;
+	-moz-transition: .2s all ease;
+	-o-transition: .2s all ease;		
+	-ms-transition: .2s all ease;
+	transition: .2s all ease;
+}
+
+#menu {	
+	background: #00baa6; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00baa6 0%, #0088cc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00baa6), color-stop(100%,#0088cc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00baa6 0%,#0088cc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00baa6 0%,#0088cc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00baa6 0%,#0088cc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00baa6 0%,#0088cc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00baa6', endColorstr='#0088cc',GradientType=0 ); /* IE6-9 */
+	z-index: 2;
+	border-right: 1px solid #ddd;
+	box-shadow: 10px 0 10px -10px rgba(0,0,0,.2);
+	@media screen and (min-width: $break-large) {
+		width: 34%;	
+	}
+}
+
+
+.js #main {
+	margin-left: 0;
+	z-index: 1;
+	position: relative;
+	@media screen and (min-width: $break-large) {
+		margin-left: 34%;
+		width: 66%;
+		float: none;
+	}
+}	
+
+
+/* Off Canvas Navigation */
+.off-canvas-navigation {
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	color: #fff;
+	padding: 10px;
+	position: relative;
+	z-index: 2;
+	@media screen and (min-width: $break-medium) {
+		display: none;
+	}
+}
+.off-canvas-navigation ul {
+	margin: 0;
+}
+.off-canvas-navigation ul li {
+	width: 22%;
+	display: block;
+	float: left;
+}
+.menu-button {
+	padding: 12% 20%;
+	font-family: $heading-font;
+	font-size: 16px;
+	display: block;
+	background: #333;
+	background: rgba(0,0,0,.9);
+	color: #fff;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	box-shadow: inset 0 20px 20px rgba(255,255,255,.1);
+	text-align: center;
+	text-transform: uppercase;
+}
+.menu-button.active-button {
+}
+a.menu-button:hover {
+	text-decoration: none;	
+	background: #666;
+	background: rgba(0,0,0,.75);
+}	
+
+@media all and (min-width: $break-medium) {				
+	.off-canvas-navigation ul li {
+		float: right;
+		width: 20%;
+	}	
+	.menu-button {
+		display: none;
+	}			
+	.active-sidebar #menu {	
+		margin-left: -100%;
+	}
+	.active-sidebar #main {
+		margin-left: 0;
+		width: 60%;
+	}		
+}
