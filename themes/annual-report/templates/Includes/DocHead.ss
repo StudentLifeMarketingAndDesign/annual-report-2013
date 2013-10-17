@@ -31,5 +31,4 @@
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
-
 </head>

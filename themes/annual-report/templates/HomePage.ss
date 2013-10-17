@@ -61,7 +61,6 @@
             $('.fill source.ogv').attr("src",'{$ThemeDir}/video/'+image[x]+'.ogv');
         });
     </script>
-
 </body>
 </html>
 
