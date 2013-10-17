@@ -39,12 +39,7 @@
 
     <div id="content-wrapper" class="clearfix">
 		
-		<% include OffCanvasNav %>
-
-		<section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
-			<% include FilterMenu %>
-			<% include PreviewList %>                                         
-		</section>
+		<!--<% include OffCanvasNav %>-->
 
 		<section id="main" role="main" style="height: 100%;">
 			<div class="home-content" style="height: 100%;">
@@ -52,6 +47,12 @@
 				<img src="{$ThemeDir}/images/dosl-lg.png" alt="" class="dosl-img" width="400">
 			</div>
 		</section>
+
+        <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
+            <% include FilterMenu %>
+            <% include PreviewList %>                                         
+        </section>
+
 	</div>
 
     <div id='background-video' class='visible-md visible-lg'>
