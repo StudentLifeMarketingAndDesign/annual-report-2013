@@ -71,15 +71,6 @@
     <script src="{$ThemeDir}/js/main.js"></script>
     <script src="{$ThemeDir}/js/plugins/jquery.mousewheel.js"></script>
     <script src="{$ThemeDir}/js/plugins/perfect-scrollbar.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            var large_mode = 'only screen and (min-width: 650px)';
-            if (Modernizr.mq(large_mode)) {
-                "use strict";
-                $('.preview-list').perfectScrollbar();
-            }
-        });
-    </script>
 
     <script>
         $(function() {
