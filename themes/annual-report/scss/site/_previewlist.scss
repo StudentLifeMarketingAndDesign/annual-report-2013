@@ -93,6 +93,7 @@
 	@media screen and (min-width: $break-xlarge) {
 		overflow: hidden;
 		text-overflow: ellipsis;
+		display: block;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
