@@ -41,6 +41,9 @@
 .preview-link:hover, .preview-link:focus {
 	text-decoration: none;
 	background-color: rgba(255,255,255,.2);
+	@media screen and (min-width: $break-large) {
+		background-color: rgba(0,0,0,.04);
+	}
 }
 .preview-thumb {
 	display: none;
