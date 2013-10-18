@@ -59,8 +59,8 @@
 	<script src="{$ThemeDir}/js/plugins-ck.js"></script>
 	<script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
 	<script src="{$ThemeDir}/js/main.js"></script>
-	<script src="{$ThemeDir}/js/plugins/jquery.mousewheel.js"></script>
-    <script src="{$ThemeDir}/js/plugins/perfect-scrollbar.js"></script>
+	<!--<script src="{$ThemeDir}/js/plugins/jquery.mousewheel.js"></script>
+    <script src="{$ThemeDir}/js/plugins/perfect-scrollbar.js"></script>-->
     <script src="{$ThemeDir}/js/plugins/affix-bootstrap.js"></script>
 </body>
 </html>

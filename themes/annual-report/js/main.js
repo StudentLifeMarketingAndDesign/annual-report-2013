@@ -18,12 +18,12 @@ jQuery(document).ready(function($) {
     });
 
 
-    var large_mode = 'only screen and (min-width: 900px)';
-    if (Modernizr.mq(large_mode)) {
-        "use strict";
-        $('.preview-list').perfectScrollbar();
+    // var large_mode = 'only screen and (min-width: 900px)';
+    // if (Modernizr.mq(large_mode)) {
+    //     "use strict";
+    //     $('.preview-list').perfectScrollbar({wheelSpeed:20});
         
-    }
+    // }
 
 }); 
 
