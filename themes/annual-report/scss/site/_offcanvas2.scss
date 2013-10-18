@@ -20,7 +20,7 @@
 }
 
 #menu {	
-	@include gradient($color: $link, $start-color: $highlight-sec, $end-color: $highlight);
+	@include gradient($color: #000, $start-color: #333, $end-color: #000);
 	z-index: 2;
 	border-right: 1px solid #ddd;
 	box-shadow: 10px 0 10px -10px rgba(0,0,0,.2);
@@ -40,64 +40,3 @@
 		float: none;
 	}
 }	
-
-
-/* Off Canvas Navigation */
-.off-canvas-navigation {
-	width: 100%;
-	overflow: hidden;
-	display: block;
-	color: #fff;
-	padding: 10px;
-	position: relative;
-	z-index: 2;
-	@media screen and (min-width: $break-medium) {
-		display: none;
-	}
-}
-.off-canvas-navigation ul {
-	margin: 0;
-}
-.off-canvas-navigation ul li {
-	width: 22%;
-	display: block;
-	float: left;
-}
-.menu-button {
-	padding: 12% 20%;
-	font-family: $heading-font;
-	font-size: 16px;
-	display: block;
-	background: #333;
-	background: rgba(0,0,0,.9);
-	color: #fff;
-	letter-spacing: 1px;
-	border-radius: 5px;
-	box-shadow: inset 0 20px 20px rgba(255,255,255,.1);
-	text-align: center;
-	text-transform: uppercase;
-}
-.menu-button.active-button {
-}
-a.menu-button:hover {
-	text-decoration: none;	
-	background: #666;
-	background: rgba(0,0,0,.75);
-}	
-
-@media all and (min-width: $break-medium) {				
-	.off-canvas-navigation ul li {
-		float: right;
-		width: 20%;
-	}	
-	.menu-button {
-		display: none;
-	}			
-	.active-sidebar #menu {	
-		margin-left: -100%;
-	}
-	.active-sidebar #main {
-		margin-left: 0;
-		width: 60%;
-	}		
-}

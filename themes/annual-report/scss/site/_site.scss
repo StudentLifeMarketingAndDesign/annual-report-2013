@@ -78,8 +78,8 @@ body .division-topbar {
 	content: "";
 	position: absolute;
 	height: 5px;
-	border-bottom: 1px solid white;
-	border-bottom: 1px solid rgba(255,255,255,.35);
+	border-bottom: 1px solid #444;
+	border-bottom: 1px solid rgba(255,255,255,.2);
 	top: 6px;
 	width: 20px;
 }
@@ -164,7 +164,7 @@ body .division-topbar {
 
 
 .menu {
-	box-shadow: 0 3px 3px rgba(0,0,0,.1);
+	box-shadow: 0 4px 5px rgba(0,0,0,.5);
 	@media screen and (min-width: $break-large) {
 		position: relative;
 		top: 0;
@@ -173,7 +173,7 @@ body .division-topbar {
 		z-index: 1000;
 	}
 	@media screen and (min-width: $break-large) {
-		@include gradient($color: $link, $start-color: $highlight-sec, $end-color: $highlight);
+		@include gradient($color: $link, $start-color: #333, $end-color: #000);
 		display: block;
 		left: 0;
 		bottom: 0;
@@ -184,14 +184,14 @@ body .division-topbar {
 }
 .main-nav {
 	border-top: 1px solid #fff;
-	border-top: 1px solid rgba(255,255,255,.35);
+	border-top: 1px solid rgba(255,255,255,.2);
 	list-style: none;
 	margin: 0;
 	margin-top: -2px;
 	padding: 0;
 	& li {
-		border-bottom: 1px solid #fff;
-		border-bottom: 1px solid rgba(255,255,255,.35);
+		border-bottom: 1px solid #444;
+		border-bottom: 1px solid rgba(255,255,255,.2);
 		float: left;
 		width: 33.3333%;
 		@media screen and (min-width: $break-small) {
@@ -214,7 +214,7 @@ body .division-topbar {
 		text-decoration: none;
 		text-transform: uppercase;
 		&:hover, &:focus {
-			background-color: rgba(255,255,255,.15);
+			background-color: rgba(255,255,255,.1);
 		}
 	}
 	@media screen and (min-width: $break-large) {
@@ -223,11 +223,11 @@ body .division-topbar {
 	}
 }
 .main-nav .active {
-	background-color: $highlight;
-	color: #eee;
+	background-color: $yellow;
+	color: #111;
 	&:hover {
-		background-color: $highlight;
-		color: #eee;
+		background-color: $yellow;
+		color: #111;
 	}
 }
 
