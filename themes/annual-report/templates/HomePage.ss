@@ -38,15 +38,6 @@
     <% include DivisionBar %>
 
     <div id="content-wrapper" class="clearfix">
-		
-		<!--<% include OffCanvasNav %>-->
-
-		<section id="main" role="main" style="height: 100%;">
-			<div class="home-content" style="height: 100%;">
-				&nbsp;
-				<img src="{$ThemeDir}/images/dosl-lg.png" alt="" class="dosl-img" width="400">
-			</div>
-		</section>
 
         <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
             <% include FilterMenu %>
@@ -60,18 +51,13 @@
             <source class="mp4" src="{$ThemeDir}/video/pentacrest_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             <source class="webm" src="{$ThemeDir}/video/pentacrest_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
             <source class="ogv" src="{$ThemeDir}/video/pentacrest_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
-            <img src="{$ThemeDir}/images/fallback.jpg" alt="Annual Report" class="fallback" />
         </video>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="{$ThemeDir}/js/plugins/affix-bootstrap.js"></script>
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
     <script src="{$ThemeDir}/js/plugins-ck.js"></script>
-    <script src="{$ThemeDir}/js/main.js"></script>
-    <script src="{$ThemeDir}/js/plugins/jquery.mousewheel.js"></script>
-    <script src="{$ThemeDir}/js/plugins/perfect-scrollbar.js"></script>
-
+    <script src="{$ThemeDir}/js/main-ck.js"></script>
     <script>
         $(function() {
             var image = new Array ();
