@@ -41,8 +41,6 @@
 
 	<div id="content-wrapper" class="clearfix">
 
-	    <!--<% include OffCanvasNav %>-->
-
 	    <article id="main" class="article" role="main">
 	    	$Layout
 		</article>
@@ -58,9 +56,6 @@
 	<script src="{$BaseHref}division-bar/js/division-bar.js"></script>
 	<script src="{$ThemeDir}/js/plugins-ck.js"></script>
 	<script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
-	<script src="{$ThemeDir}/js/main.js"></script>
-	<!--<script src="{$ThemeDir}/js/plugins/jquery.mousewheel.js"></script>
-    <script src="{$ThemeDir}/js/plugins/perfect-scrollbar.js"></script>-->
-    <script src="{$ThemeDir}/js/plugins/affix-bootstrap.js"></script>
+	<script src="{$ThemeDir}/js/main-ck.js"></script>
 </body>
 </html>

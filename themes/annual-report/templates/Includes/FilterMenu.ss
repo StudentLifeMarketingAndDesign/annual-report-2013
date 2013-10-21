@@ -2,9 +2,8 @@
     <a href="/annual-report-2013/" class="oldcap-logo">
         <img src="{$ThemeDir}/images/capitol.png" alt="University of Iowa Capitol">
         <strong class="year"><span>2013</span></strong>
-        <h1 class="heading-main">Annual<span class="break"> Report</h1>
+        <h1 class="heading-main">Annual<span class="break"></span> Report</h1>
         <h2 class="heading-sec">Division of Student Life</h2>
-        <!-- <span class="logo-block"></span> -->
     </a>
     <ul id="filters" class="main-nav clearfix">
         <li><a href="#all" data-filter="*" class="active">All</a></li>

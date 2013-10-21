@@ -27,13 +27,11 @@ body.HomePage {
 /* Layout
 ========================================================================== */
 #content-wrapper {
-	
 	position: relative;
 	@media screen and (min-width: $break-large) {
 		height: 100%;
 	}
 }
-
 
 /* Division Bar */
 body .division-topbar {
@@ -44,7 +42,6 @@ body .division-topbar {
 		box-shadow: 0 5px 5px rgba(0,0,0,.15);
 	}
 }
-
 .division-topbar .wrapper {
 	@media screen and (min-width: $break-large) {
 		max-width: none;
@@ -53,200 +50,16 @@ body .division-topbar {
 	}
 }
 
-
-/* MENU
-========================================================================== */
-.year {
-	color: #fff;
-	display: block;
-	font-family: $heading-font;
-	font-size: 15px;
-	font-weight: 300;
-	letter-spacing: 1px;
-	margin: 5px 0;
-	text-align: center;
+/* BOOTSTRAP Affix menu to top of page */
+.affix-top {
 	@media screen and (min-width: $break-large) {
-		font-size: 13px;
-	}
-}
-.year span {
-	display: inline-block;
-	position: relative;  
-}
-.year span:before,
-.year span:after {
-	content: "";
-	position: absolute;
-	height: 5px;
-	border-bottom: 1px solid #444;
-	border-bottom: 1px solid rgba(255,255,255,.2);
-	top: 6px;
-	width: 20px;
-}
-.year span:before {
-	right: 100%;
-	margin-right: 8px;
-}
-.year span:after {
-	left: 100%;
-	margin-left: 8px;
-}
-
-
-.heading-main {
-	color: #fff;
-	font-size: 32px;
-	font-weight: 300;
-	letter-spacing: 1px;
-	line-height: 1.2;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
-	@media screen and (min-width: $break-large) {
-		font-size: 24px;
-	}
-}
-.break {
-	@media screen and (min-width: $break-large) {
-		display: block;
-	}
-}
-.heading-sec {
-	color: #fff;
-	font-size: 18px;
-	font-weight: normal;
-	line-height: 1.1;
-	margin-top: 8px;
-	padding: 0;
-	text-align: center;
-	@media screen and (min-width: $break-large) {
-		font-size: 10px;
-	}
-}
-.oldcap-logo {
-	display: block;
-	padding: 20px 0;
-	position: relative;
-	text-decoration: none;
-	z-index: 2;
-	&:hover {
-		text-decoration: none;
-	}
-	@media screen and (min-width: $break-large) {
-		padding: 10px 0;
-	}
-}
-.oldcap-logo img {
-	display: block;
-	margin: 0 auto;
-	padding: 5px 35px;
-}
-.oldcap-logo {
-	display: block;
-	margin: 0 auto;
-	position: relative;
-	bottom: -2px;
-}
-.logo-block {
-	background-color: #000;
-	position: absolute;
-	bottom: -3px;
-	height: 6px;
-	margin-left: -20%;
-	left: 50%;
-	width: 40%;
-	@media screen and (min-width: $break-large) {
-		margin-left: -25%;
-		width: 50%;
-	}
-}
-
-
-.menu {
-	box-shadow: 0 4px 5px rgba(0,0,0,.5);
-	@media screen and (min-width: $break-large) {
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: 1000;
-	}
-	@media screen and (min-width: $break-large) {
-		@include gradient($color: $link, $start-color: #333, $end-color: #000);
-		display: block;
-		left: 0;
-		bottom: 0;
-		width: 100px;
 		position: absolute;
-		height: 100%;
+		top: 0;
 	}
 }
-.main-nav {
-	border-top: 1px solid #fff;
-	border-top: 1px solid rgba(255,255,255,.2);
-	list-style: none;
-	margin: 0;
-	margin-top: -2px;
-	padding: 0;
-	& li {
-		border-bottom: 1px solid #444;
-		border-bottom: 1px solid rgba(255,255,255,.2);
-		float: left;
-		width: 33.3333%;
-		@media screen and (min-width: $break-small) {
-			width: 16.66666666666667%;
-		}
-		@media screen and (min-width: $break-large) {
-			float: none;
-			width: 100%;
-		}
-	}
-	& a {
-		color: #fff;
-		display: block;
-		font-family: $heading-font;
-		font-size: 14px;
-		font-weight: 300;
-		letter-spacing: 2px;
-		padding: 9px 0;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		&:hover, &:focus {
-			background-color: rgba(255,255,255,.1);
-		}
-	}
+.affix {
 	@media screen and (min-width: $break-large) {
-		display: block;
-		margin-top: 0;
+		position: fixed;
+		top: 0;
 	}
-}
-.main-nav .active {
-	background-color: $yellow;
-	color: #111;
-	&:hover {
-		background-color: $yellow;
-		color: #111;
-	}
-}
-
-
-
-/* Pace Loading Bar */
-.pace .pace-progress {
-  background: #ffce39;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  left: 0;
-  height: 2px;
-  -webkit-transition: width 1s;
-     -moz-transition: width 1s;
-       -o-transition: width 1s;
-          transition: width 1s;
-}
-
-.pace-inactive {
-  display: none;
 }

@@ -1,4 +1,6 @@
 
+/* Video
+========================================================================== */
 #background-video {
 	display: none; 
 	@media screen and (min-width: $break-large) {
@@ -10,14 +12,21 @@
 		left: 0;	
 	}
 }
-
-.home-content {
+#background-video .fill {
+	position: absolute;
+	z-index: -1000;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-color: transparent;
+}
+/*.home-content {
 	@media screen and (min-width: $break-large) {
-	height: 100%;
+		height: 100%;
+	}
 }
-}
-
-.home-content .dosl-img {
+.dosl-img {
 	display: block;
 	margin: 0 auto;
 	padding: 0 5%;
@@ -28,28 +37,31 @@
 		left: 50%;
 		margin-left: -200px;
 	}
-}
-.fill {
-	position: absolute;
-	z-index: -1000;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-	min-height: 100%;
-	background-color: transparent;
-}
+}*/
 
 
-/* Preview Menu
-========================================================================== */
+
+/* ========================================================================== */
+.HomePage #menu {
+	@media screen and (min-width: $break-large) {
+		width: 40%;
+		-webkit-box-shadow: 15px 0 20px rgba(0,0,0,.08);
+		-moz-box-shadow: 15px 0 20px rgba(0,0,0,.08);
+		box-shadow: 15px 0 20px rgba(0,0,0,.08);	
+	}
+}
 .HomePage #main {
 	display: none;
 	@media screen and (min-width: $break-large) {
-		display: block;	
+		display: block;
+		width: 60%;
+		margin-left: 40%;	
 	}
 }
-.HomePage #content-wrapper {
-	z-index: 1;
+.HomePage .preview-link {
+	@media screen and (min-width: $break-xlarge) {
+		padding: 1.5em;	
+	}
 }
 .HomePage .preview-title {
 	@media screen and (min-width: $break-xlarge) {
@@ -58,11 +70,6 @@
 	}
 	@media screen and (max-height: 768px) {
 		font-size: 20px;
-	}
-}
-.HomePage .preview-link {
-	@media screen and (min-width: $break-xlarge) {
-		padding: 1.5em;	
 	}
 }
 .HomePage .preview-excerpt {
@@ -79,21 +86,6 @@
 .HomePage .preview-title, .HomePage .preview-dept, .HomePage .preview-excerpt {
 	@media screen and (min-width: $break-large) {
 		margin-left: 25%;
-	}
-}
-.HomePage #menu {
-	@media screen and (min-width: $break-large) {
-		width: 40%;
-		-webkit-box-shadow: 15px 0 20px rgba(0,0,0,.07);
-		-moz-box-shadow: 15px 0 20px rgba(0,0,0,.07);
-		box-shadow: 15px 0 20px rgba(0,0,0,.07);	
-	}
-	
-}
-.HomePage #main {
-	@media screen and (min-width: $break-large) {
-		width: 60%;
-		margin-left: 40%;
 	}
 }
 
