@@ -43,7 +43,10 @@
             <% include FilterMenu %>
             <% include PreviewList %>                                         
         </section>
-
+        <section id="main">
+            <img src="{$ThemeDir}/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
+        </section>
+        
 	</div>
 
     <div id='background-video' class='visible-md visible-lg'>

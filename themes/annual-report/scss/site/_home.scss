@@ -21,23 +21,25 @@
 	min-height: 100%;
 	background-color: transparent;
 }
-/*.home-content {
+.home-content {
 	@media screen and (min-width: $break-large) {
 		height: 100%;
 	}
 }
+
 .dosl-img {
 	display: block;
 	margin: 0 auto;
 	padding: 0 5%;
 	@media screen and (min-width: $break-large) {
 		position: absolute;
-		bottom: 10%;
+		top: 50%;
 		padding: 0;
 		left: 50%;
 		margin-left: -200px;
+		margin-top: -75px;
 	}
-}*/
+}
 
 
 
@@ -54,6 +56,7 @@
 	display: none;
 	@media screen and (min-width: $break-large) {
 		display: block;
+		height: 100%;
 		width: 60%;
 		margin-left: 40%;	
 	}
