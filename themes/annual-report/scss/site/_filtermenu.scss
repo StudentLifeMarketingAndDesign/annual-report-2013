@@ -32,7 +32,7 @@
 		box-shadow: none;
 	}
 	@media screen and (min-width: $break-large) {
-		@include gradient($color: $link, $start-color: #333, $end-color: #000);
+		@include gradient($color: #333, $start-color: #333, $end-color: #000);
 		-webkit-box-shadow: 3px 0 3px rgba(0,0,0,.15);
 		-moz-box-shadow: 3px 0 3px rgba(0,0,0,.15);
 		box-shadow: 3px 0 3px rgba(0,0,0,.15);

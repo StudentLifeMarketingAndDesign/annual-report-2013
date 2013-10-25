@@ -110,7 +110,8 @@
 	text-align: right;
 }
 .cssgradients .article-content blockquote p {
-	@include gradient($color: transparent, $start-color: #c39e2c, $end-color: #564f38);
+
+	background: -webkit-gradient(linear,left top,left bottom,from(#c39e2c),to(#564f38));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
