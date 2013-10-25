@@ -33,6 +33,9 @@
 	}
 	@media screen and (min-width: $break-large) {
 		@include gradient($color: $link, $start-color: #333, $end-color: #000);
+		-webkit-box-shadow: 3px 0 3px rgba(0,0,0,.15);
+		-moz-box-shadow: 3px 0 3px rgba(0,0,0,.15);
+		box-shadow: 3px 0 3px rgba(0,0,0,.15);
 		left: 0;
 		bottom: 0;
 		width: 100px;
