@@ -1,13 +1,7 @@
 .preview-list {
 	height: 100%;
-	overflow: hidden;
+	xoverflow: hidden;
 	position: relative;
-	@media screen and (min-width: $break-medium) {
-		top: 0;
-		bottom: 0;
-		width: 100%;
-		overflow: hidden;
-	}
 	@media screen and (min-width: $break-large) {
 		background-color: #fff;
 		padding-bottom: 43px;
@@ -22,6 +16,9 @@
 .preview-list ul {
 	list-style: none;
 	margin: 0;
+	@media screen and (max-width: $break-large - 1px) {
+		@include gradient($color: #000, $start-color: #2d2d2d, $end-color: #000);
+	}
 	& li {
 		border-bottom: 1px solid #e5e5e5;
 		width: 100%;
