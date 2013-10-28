@@ -6,7 +6,7 @@
 	-moz-box-shadow: 10px 0 10px -10px rgba(0,0,0,.2);
 	box-shadow: 10px 0 10px -10px rgba(0,0,0,.2);
 	@media screen and (min-width: $break-large) {
-		width: 34%;	
+		width: 40%;	
 	}
 }
 #main {
@@ -15,8 +15,9 @@
 	z-index: 1;
 	position: relative;
 	@media screen and (min-width: $break-large) {
-		margin-left: 34%;
-		width: 66%;
+		height: 100%;
+		margin-left: 40%;
+		width: 60%;
 		float: none;
 	}
 }

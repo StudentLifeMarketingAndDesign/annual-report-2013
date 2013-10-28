@@ -34,6 +34,9 @@
 	padding: 1em;
 	text-decoration: none;
 	text-rendering: optimizeLegibility;
+	@media screen and (min-width: $break-xlarge) {
+		padding: 1.5em;
+	}
 }
 .preview-link:hover, .preview-link:focus {
 	text-decoration: none;
@@ -44,7 +47,7 @@
 }
 .preview-thumb {
 	display: none;
-	@media screen and (min-width: $break-large) {
+	@media screen and (min-width: $break-xlarge) {
 		display: block;
 		float: left;
 		margin-top: .3em;
@@ -65,7 +68,8 @@
 		letter-spacing: 1px;
 	}
 	@media screen and (min-width: $break-xlarge) {
-		font-size: 20px;
+		font-size: 22px;
+		margin-left: 25%;
 	}
 }
 .preview-link:hover .preview-title {
@@ -81,6 +85,9 @@
 	@media screen and (min-width: $break-large) {
 		color: $highlight;
 	}
+	@media screen and (min-width: $break-xlarge) {
+		margin-left: 25%;
+	}
 }
 
 
@@ -93,12 +100,20 @@
 	margin-top: 0.5em;
 	margin-bottom: 0.2em;
 	line-height: 1.5;
-	@media screen and (min-width: $break-xlarge) {
+	@media screen and (min-width: $break-large) {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: block;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
+	}
+	@media screen and (min-width: $break-xlarge) {
+		display: block;
+		margin-left: 25%;
+		overflow: visible;
+	}
+	@media screen and (max-height: 768px) {
+		display: none;
 	}
 }
