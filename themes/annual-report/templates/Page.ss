@@ -41,14 +41,14 @@
 
 	<div id="content-wrapper" class="clearfix">
 
-	    <article id="main" class="article" role="main">
+	  <article id="main" class="article" role="main">
 	    	$Layout
 		</article>
 
-	    <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
-	    	<% include FilterMenu %>
-	        <% include PreviewList %>                                         
-	    </section>
+	  <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
+	  	<% include FilterMenu %>
+	  	<% include PreviewList %>                                         
+	  </section>
 
 	</div>
 

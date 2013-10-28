@@ -5,7 +5,7 @@
 			<a href="$Link" class="preview-link $LinkingMode" title="Go to the $Title.XML article">
 				
 				<% if $Top.ClassName == 'HomePage' %>
-				<% if $Photo %><img src="$Photo.CroppedImage(100,100).URL" class="preview-thumb" alt="$Title"><% end_if %>
+				<% if $Photo %><img src="$Photo.CroppedImage(75,75).URL" class="preview-thumb" alt="$Title"><% end_if %>
 				<% end_if %>
 				
 				<h3 class="preview-title">$MenuTitle.XML</h3>

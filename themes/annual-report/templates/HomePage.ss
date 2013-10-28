@@ -39,28 +39,30 @@
 
     <div id="content-wrapper" class="clearfix">
 
-        <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
-            <% include FilterMenu %>
-            <% include PreviewList %>                                         
-        </section>
-        <section id="main">
+        <article id="main" class="article" role="main">
             <img src="{$ThemeDir}/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
-        </section>
-        
-	</div>
+            <div id='background-video' class='visible-md visible-lg'>
+            <video autoplay loop preload class="fill">
+                <source class="mp4" src="{$ThemeDir}/video/pentacrest_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source class="webm" src="{$ThemeDir}/video/pentacrest_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
+                <source class="ogv" src="{$ThemeDir}/video/pentacrest_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
+            </video>
+          </div>
+        </article>
 
-    <div id='background-video' class='visible-md visible-lg'>
-        <video autoplay loop preload class="fill">
-            <source class="mp4" src="{$ThemeDir}/video/pentacrest_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-            <source class="webm" src="{$ThemeDir}/video/pentacrest_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
-            <source class="ogv" src="{$ThemeDir}/video/pentacrest_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
-        </video>
+      <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
+        <% include FilterMenu %>
+        <% include PreviewList %>                                         
+      </section>
+        
     </div>
+
+    
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
-    <script src="{$ThemeDir}/js/plugins/affix-bootstrap.js"></script>
-    <script src="{$ThemeDir}/js/plugins/jquery.isotope.min.js"></script>
+    <script src="{$ThemeDir}/js/plugins-ck.js"></script>
+    <script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
     <script src="{$ThemeDir}/js/main-ck.js"></script>
     <script>
         $(function() {
