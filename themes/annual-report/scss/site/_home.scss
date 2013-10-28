@@ -28,9 +28,7 @@
 }
 
 .dosl-img {
-	display: block;
-	margin: 0 auto;
-	padding: 0 5%;
+	display: none;
 	@media screen and (min-width: $break-large) {
 		position: absolute;
 		bottom: 10%;
@@ -53,7 +51,6 @@
 	}
 }
 .HomePage #main {
-	display: none;
 	@media screen and (min-width: $break-large) {
 		display: block;
 		height: 100%;
