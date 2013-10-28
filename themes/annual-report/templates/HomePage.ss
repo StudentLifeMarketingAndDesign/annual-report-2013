@@ -50,7 +50,7 @@
 	</div>
 
     <div id='background-video' class='visible-md visible-lg'>
-        <video autoplay loop preload class='fill' poster="{$ThemeDir}/images/fallback.jpg">
+        <video autoplay loop preload class="fill" poster="{$ThemeDir}/images/fallback.jpg">
             <source class="mp4" src="{$ThemeDir}/video/pentacrest_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             <source class="webm" src="{$ThemeDir}/video/pentacrest_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
             <source class="ogv" src="{$ThemeDir}/video/pentacrest_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
@@ -59,7 +59,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
-    <script src="{$ThemeDir}/js/plugins-ck.js"></script>
+    <script src="{$ThemeDir}/js/plugins/affix-bootstrap.js"></script>
+    <script src="{$ThemeDir}/js/plugins/jquery.isotope.min.js"></script>
     <script src="{$ThemeDir}/js/main-ck.js"></script>
     <script>
         $(function() {
