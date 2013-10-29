@@ -152,3 +152,20 @@
 	padding-left: 3px;
 	font-family: Georgia;
 }
+
+/* Captions */
+.captionImage {
+	margin-bottom: 1em;
+}
+.captionImage .caption {
+	font-size: 13px;
+	margin: 0;
+}
+.captionImage.left {
+	float: left;
+	margin-right: 1em;
+}
+.captionImage.right {
+	float: right;
+	margin-left: 1em;
+}
