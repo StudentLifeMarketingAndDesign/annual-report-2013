@@ -43,9 +43,9 @@
             <img src="{$ThemeDir}/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
             <div id='background-video' class='visible-md visible-lg'>
             <video autoplay loop preload class="fill">
-                <source class="mp4" src="{$ThemeDir}/video/pentacrest_hd.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-                <source class="webm" src="{$ThemeDir}/video/pentacrest_hd.webm" type='video/webm; codecs="vp8, vorbis"' />
-                <source class="ogv" src="{$ThemeDir}/video/pentacrest_hd.ogv" type='video/ogg; codecs="theora, vorbis"' />
+                <source class="mp4" src="{$ThemeDir}/video/{$RandomVideo}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source class="webm" src="{$ThemeDir}/video/{$RandomVideo}.webm" type='video/webm; codecs="vp8, vorbis"' />
+                <source class="ogv" src="{$ThemeDir}/video/{$RandomVideo}.ogv" type='video/ogg; codecs="theora, vorbis"' />
             </video>
           </div>
         </article>
@@ -64,20 +64,7 @@
     <script src="{$ThemeDir}/js/plugins-ck.js"></script>
     <script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
     <script src="{$ThemeDir}/js/main-ck.js"></script>
-    <script>
-        jQuery(document).ready(function($) {
-            var image = new Array ();
-            image[0] = "imu_hd";
-            image[1] = "burge_hd";
-            image[2] = "pentacrest_hd";
-            image[3] = "rec_hd";
-            var size = image.length;
-            var x = Math.floor(size*Math.random());
-            $('.fill .mp4').attr("src",'{$ThemeDir}/video/'+image[x]+'.mp4');
-            $('.fill .webm').attr("src",'{$ThemeDir}/video/'+image[x]+'.webm');
-            $('.fill .ogv').attr("src",'{$ThemeDir}/video/'+image[x]+'.ogv');
-        });
-    </script>
+
 </body>
 </html>
 
