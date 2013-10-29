@@ -65,7 +65,7 @@
     <script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
     <script src="{$ThemeDir}/js/main-ck.js"></script>
     <script>
-        $(function() {
+        jQuery(document).ready(function($) {
             var image = new Array ();
             image[0] = "imu_hd";
             image[1] = "burge_hd";
