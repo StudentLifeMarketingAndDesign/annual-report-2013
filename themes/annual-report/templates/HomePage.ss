@@ -73,9 +73,9 @@
             image[3] = "rec_hd";
             var size = image.length;
             var x = Math.floor(size*Math.random());
-            $('.fill source.mp4').attr("src",'{$ThemeDir}/video/'+image[x]+'.mp4');
-            $('.fill source.webm').attr("src",'{$ThemeDir}/video/'+image[x]+'.webm');
-            $('.fill source.ogv').attr("src",'{$ThemeDir}/video/'+image[x]+'.ogv');
+            $('.fill .mp4').attr("src",'{$ThemeDir}/video/'+image[x]+'.mp4');
+            $('.fill .webm').attr("src",'{$ThemeDir}/video/'+image[x]+'.webm');
+            $('.fill .ogv').attr("src",'{$ThemeDir}/video/'+image[x]+'.ogv');
         });
     </script>
 </body>
