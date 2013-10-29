@@ -85,7 +85,7 @@
 		margin-bottom: 1em;
 	}
 }
-.article-content p:first-of-type {
+.article-content > p:first-of-type {
 	@media screen and (min-width: $break-small) {
 		font-size: 20px;
 	}
