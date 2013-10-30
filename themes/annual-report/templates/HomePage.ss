@@ -42,7 +42,7 @@
         <article id="main" class="article" role="main">
             <img src="{$ThemeDir}/images/dosl-lg.png" class="dosl-img" alt="Division of Student Life">
             <div id='background-video' class='visible-md visible-lg'>
-            <video autoplay loop preload poster="{$ThemeDir}/images/fallback.jpg" class="fill">
+            <video autoplay loop preload class="fill">
                 <source class="mp4" src="{$ThemeDir}/video/{$RandomVideo}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                 <source class="webm" src="{$ThemeDir}/video/{$RandomVideo}.webm" type='video/webm; codecs="vp8, vorbis"' />
                 <source class="ogv" src="{$ThemeDir}/video/{$RandomVideo}.ogv" type='video/ogg; codecs="theora, vorbis"' />
