@@ -16,9 +16,9 @@
 /* Header
 ========================================================================== */
 .article-header {
-	padding: 1em 0;
+	padding-top: 1em;
 	@media screen and (min-width: $break-medium) {
-		padding: 2.2em 0;
+		padding-top: 2.2em;
 	}
 }
 .article-dept {
@@ -27,6 +27,9 @@
 	font-size: 14px;
 	letter-spacing: 1px;
 	line-height: 1.2;
+}
+.article-img {
+	margin: 2em 0 1em;
 }
 .article-title {
 	background: #fff;
@@ -76,9 +79,6 @@
 
 /* Article Content
 ========================================================================== */
-.article-content {
-	margin-top: 2.5em;
-}
 .article-content {
 	& p, & ul, & ol {
 		margin-top: 1em;
