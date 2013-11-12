@@ -3,9 +3,8 @@ class Article extends Page {
 
 	public static $db = array(
 		"Department" => "Text",
-		"Challenge" => "Enum('Excel, Stretch, Engage, Choose, Serve', 'Excel')",
+		"Challenge" => "Enum('About, Excel, Stretch, Engage, Choose, Serve', 'Excel')",
 		"WordsBy" => "Text",
-		"VideoBy" => "Text",
 		"Excerpt" => "Text",
 	
 	);
@@ -25,9 +24,8 @@ class Article extends Page {
 		$fields->addFieldToTab("Root.Main", new DropdownField('Challenge','Challenge',singleton('Article')->dbObject('Challenge')->enumValues()));
 		$fields->addFieldToTab("Root.Main", new TextField("Department", "Department"));
 		$fields->addFieldToTab("Root.Main", new TextField("WordsBy", "Written By:"));
-		$fields->addFieldToTab("Root.Main", new TextField("VideoBy", "Video By: (optional)" ));
 		$fields->addFieldToTab("Root.Main", new TextareaField("Excerpt", "Excerpt"));
-		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo (dimensions)"));
+		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content"));
 		
 		return $fields;

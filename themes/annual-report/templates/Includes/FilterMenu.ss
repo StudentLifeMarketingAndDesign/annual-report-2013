@@ -12,5 +12,6 @@
         <li><a href="#choose" data-filter=".Choose">Choose</a></li>
         <li><a href="#engage" data-filter=".Engage">Engage</a></li>
         <li><a href="#serve" data-filter=".Serve">Serve</a></li>
+        <li><a href="#about" data-filter=".About">About</a></li>
     </ul>
 </div>
