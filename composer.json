@@ -5,12 +5,23 @@
 		"php": ">=5.3.2",
 		"silverstripe/cms": "self.version",
 		"silverstripe/framework": "self.version",
-		"silverstripe-themes/simple": "*"
+		"silverstripe-themes/simple": "*",
+		"md/division-bar": "*"
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "3.1.x-dev"
+			"dev-master": "3.1.2"
 		}
 	},
+
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
+
+        }
+     ],
 	"minimum-stability": "dev"
 }
+
+
