@@ -1,5 +1,5 @@
 <div class="menu">
-    <a href="/annual-report-2013/" class="oldcap-logo">
+    <a href="{$BaseHref}" class="oldcap-logo">
         <img src="{$ThemeDir}/images/capitol.png" alt="University of Iowa Capitol">
         <strong class="year"><span>2013</span></strong>
         <h1 class="heading-main">Annual<span class="break"></span> Report</h1>
