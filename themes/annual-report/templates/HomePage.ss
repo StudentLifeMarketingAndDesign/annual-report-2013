@@ -64,6 +64,7 @@
     <script src="{$ThemeDir}/js/plugins-ck.js"></script>
     <script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
     <script src="{$ThemeDir}/js/main-ck.js"></script>
+    <% include GoogleAnalytics %>
 
 </body>
 </html>
