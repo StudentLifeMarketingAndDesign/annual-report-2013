@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1df2e645dbdca02e35a25fd4deb7bef8",
+    "hash": "cd5ca18b61d232956f98720d2ce78824",
     "packages": [
         {
             "name": "composer/installers",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c"
+                "reference": "c74a930ef0cb2e36c9f0c119eb920b82513c2e46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d792632d27e1980d921cbbba12eab7b888338d4c",
-                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c",
+                "url": "https://api.github.com/repos/composer/installers/zipball/c74a930ef0cb2e36c9f0c119eb920b82513c2e46",
+                "reference": "c74a930ef0cb2e36c9f0c119eb920b82513c2e46",
                 "shasum": ""
             },
             "replace": {
@@ -53,31 +53,41 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Craft",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
                 "agl",
+                "annotatecms",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
+                "croogo",
                 "drupal",
+                "elgg",
                 "fuelphp",
                 "installer",
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
                 "phpbb",
+                "piwik",
                 "ppi",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2013-10-24 16:13:49"
+            "time": "2014-03-21 15:33:48"
         },
         {
             "name": "md/division-bar",
@@ -85,12 +95,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "a7f5f130a3dac2048432682d0abb226b64cec1fd"
+                "reference": "ddc77ff12954b9701a7be8aeeebc1ec13a71be3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/a7f5f130a3dac2048432682d0abb226b64cec1fd",
-                "reference": "a7f5f130a3dac2048432682d0abb226b64cec1fd",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/ddc77ff12954b9701a7be8aeeebc1ec13a71be3c",
+                "reference": "ddc77ff12954b9701a7be8aeeebc1ec13a71be3c",
                 "shasum": ""
             },
             "require": {
@@ -109,7 +119,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2013-10-21 17:20:19"
+            "time": "2014-03-21 14:26:08"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -149,30 +159,24 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "dev-master",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "e17fb17520fd2161cf973f3ec1c7f43c93e5f005"
+                "reference": "e2fa3b7f2c208af4a33e7176c1a950396d423f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/e17fb17520fd2161cf973f3ec1c7f43c93e5f005",
-                "reference": "e17fb17520fd2161cf973f3ec1c7f43c93e5f005",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/e2fa3b7f2c208af4a33e7176c1a950396d423f19",
+                "reference": "e2fa3b7f2c208af4a33e7176c1a950396d423f19",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
                 "php": ">=5.3.2",
-                "silverstripe/framework": "3.2.x-dev",
-                "silverstripe/reports": "*"
+                "silverstripe/framework": "3.1.*"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "tests/behat/"
@@ -198,32 +202,27 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2013-11-11 07:24:03"
+            "time": "2013-11-07 23:59:07"
         },
         {
             "name": "silverstripe/framework",
-            "version": "dev-master",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "538f09b94fea3e5ef3778a9af78ffb1ea3922d8d"
+                "reference": "054b35ded7674f13ccad4cec8fe38372e2a001df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/538f09b94fea3e5ef3778a9af78ffb1ea3922d8d",
-                "reference": "538f09b94fea3e5ef3778a9af78ffb1ea3922d8d",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/054b35ded7674f13ccad4cec8fe38372e2a001df",
+                "reference": "054b35ded7674f13ccad4cec8fe38372e2a001df",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
-                "php": ">=5.3.3"
+                "php": ">=5.3.2"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "tests/behat/features/bootstrap"
@@ -249,48 +248,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2013-11-17 20:02:12"
-        },
-        {
-            "name": "silverstripe/reports",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-reports.git",
-                "reference": "2303ce3ed0672ffa2675c8e5de546764c1070295"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-reports/zipball/2303ce3ed0672ffa2675c8e5de546764c1070295",
-                "reference": "2303ce3ed0672ffa2675c8e5de546764c1070295",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "silverstripe/framework": ">=3.1.x-dev"
-            },
-            "type": "silverstripe-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "SilverStripe",
-                    "homepage": "http://silverstripe.com"
-                },
-                {
-                    "name": "The SilverStripe Community",
-                    "homepage": "http://silverstripe.org"
-                }
-            ],
-            "homepage": "http://silverstripe.org",
-            "keywords": [
-                "cms",
-                "reports",
-                "silverstripe"
-            ],
-            "time": "2013-11-05 03:43:51"
+            "time": "2013-11-12 18:43:44"
         }
     ],
     "packages-dev": [
@@ -300,10 +258,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "silverstripe/cms": 20,
-        "silverstripe/framework": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": {
         "php": ">=5.3.2"
     },
