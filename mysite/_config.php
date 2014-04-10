@@ -3,19 +3,13 @@
 global $project;
 $project = 'mysite';
 
-global $databaseConfig;
-$databaseConfig = array(
-	"type" => 'MySQLDatabase',
-	"server" => 'localhost',
-	"username" => 'root',
-	"password" => 'omega',
-	"database" => 'annualreport2013',
-	"path" => '',
-);
+global $database;
+$database = 'annualreport2013';
+ 
+// Use _ss_environment.php file for configuration
+require_once("conf/ConfigureFromEnv.php");
+MySQLDatabase::set_connection_charset('utf8');
 
-Security::setDefaultAdmin('admin','password');
 
 // Set the site locale
 i18n::set_locale('en_US');
-
-Director::set_environment_type("dev");
