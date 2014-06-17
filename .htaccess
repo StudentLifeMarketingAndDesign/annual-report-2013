@@ -40,7 +40,7 @@ ErrorDocument 500 /assets/error-500.html
 
 
 
-php_flag display_errors off
+php_flag display_errors on
 
 # ------------------------------------------------------------------------------
 # | UTF-8 encoding                                                             |

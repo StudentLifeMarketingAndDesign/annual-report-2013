@@ -1,6 +1,6 @@
 <nav class="preview-list clearfix" role="navigation">
 	<ul id="isotope-menu">
-		<% loop $Menu(1) %>
+		<% loop $Children %>
 		<li class="item $Challenge $LinkingMode">
 			<a href="$Link" class="preview-link $LinkingMode" title="Go to the $Title.XML article">
 				<% if $Photo %><img src="$Photo.CroppedImage(150,150).URL" class="preview-thumb" alt="$Title"><% end_if %>

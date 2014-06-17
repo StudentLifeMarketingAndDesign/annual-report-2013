@@ -25,27 +25,10 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array ( 'RandomVideo'
-	);
 
 	public function init() {
 		parent::init();
 
 	}
-
-	public function RandomVideo(){
-		$videos = array();
-
-		$videos[0] = "imu_hd";
-        $videos[1] = "burge_hd";
-        $videos[2] = "pentacrest_hd";
-        $videos[3] = "rec_hd";
-
-        $randomKey = array_rand($videos);
-        $randomVideo = $videos[$randomKey];
-
-        return $randomVideo;
-
-	}
-
+	
 }
