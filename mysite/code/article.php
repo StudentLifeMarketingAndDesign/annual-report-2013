@@ -3,7 +3,7 @@ class Article extends Page {
 
 	public static $db = array(
 		"Department" => "Text",
-		"Challenge" => "Enum('About, Excel, Stretch, Engage, Choose, Serve', 'Excel')",
+		//"Challenge" => "Enum('About, Excel, Stretch, Engage, Choose, Serve', 'Excel')",
 		"WordsBy" => "Text",
 		"Excerpt" => "Text",
 	
@@ -26,7 +26,7 @@ class Article extends Page {
 		$fields->removeByName("Metadata");
 
 		$fields->addFieldToTab("Root.Main", new TextField("Department", "Department"));
-		$fields->addFieldToTab("Root.Main", new DropdownField('Challenge','Challenge',singleton('Article')->dbObject('Challenge')->enumValues()));
+		//$fields->addFieldToTab("Root.Main", new DropdownField('Challenge','Challenge',singleton('Article')->dbObject('Challenge')->enumValues()));
 		$fields->addFieldToTab("Root.Main", new TextField("Department", "Department"));
 		$fields->addFieldToTab("Root.Main", new TextField("WordsBy", "Written By:"));
 		$fields->addFieldToTab("Root.Main", new TextareaField("Excerpt", "Excerpt"));
