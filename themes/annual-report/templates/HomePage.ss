@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
-    <link rel="stylesheet" href="{$BaseHref}division-bar/css/_division-bar.css" />
+  
 
     <!-- JS -->
     <!--[if lt IE 9]>

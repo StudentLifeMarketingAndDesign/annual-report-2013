@@ -35,22 +35,11 @@
 
 <body class="$ClassName">
 
-	<a href="#main" class="visuallyhidden focusable">Skip to main content</a>
-
 	<% include DivisionBar %>
 
-	<div id="content-wrapper" class="clearfix">
+	<a href="#main" class="visuallyhidden focusable">Skip to main content</a>
 
-	  <article id="main" class="article" role="main">
-	    	$Layout
-		</article>
-
-	  <section id="menu" data-spy="affix" data-offset-top="43" class="affix-top">
-	  	<% include FilterMenu %>
-	  	<% include PreviewList %>                                         
-	  </section>
-
-	</div>
+	$Layout
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="{$BaseHref}division-bar/js/division-bar.js"></script>

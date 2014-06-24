@@ -3,7 +3,7 @@ class Article extends Page {
 
 	public static $db = array(
 		"Department" => "Text",
-		"Challenge" => "Enum('About, Excel, Stretch, Engage, Choose, Serve', 'Excel')",
+		//"Challenge" => "Enum('About, Excel, Stretch, Engage, Choose, Serve', 'Excel')",
 		"WordsBy" => "Text",
 		"Excerpt" => "Text",
 	
@@ -14,6 +14,11 @@ class Article extends Page {
 
 	);
 	
+	public static $many_many = array(
+		"Categories" => "Category"
+
+	);
+	
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 		
@@ -21,12 +26,28 @@ class Article extends Page {
 		$fields->removeByName("Metadata");
 
 		$fields->addFieldToTab("Root.Main", new TextField("Department", "Department"));
-		$fields->addFieldToTab("Root.Main", new DropdownField('Challenge','Challenge',singleton('Article')->dbObject('Challenge')->enumValues()));
+		//$fields->addFieldToTab("Root.Main", new DropdownField('Challenge','Challenge',singleton('Article')->dbObject('Challenge')->enumValues()));
 		$fields->addFieldToTab("Root.Main", new TextField("Department", "Department"));
 		$fields->addFieldToTab("Root.Main", new TextField("WordsBy", "Written By:"));
 		$fields->addFieldToTab("Root.Main", new TextareaField("Excerpt", "Excerpt"));
 		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo"));
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content"));
+		
+		$categoriesMap = array();
+		//foreach(Category::get() as $category) {
+		foreach($this->getParent()->Categories() as $category){
+			$categoriesMap[$category->ID] = $category->Title;
+		}
+		asort($categoriesMap);
+		
+		$categoriesField = ListboxField::create('Categories', 'Categories <a href="admin/categories/" target="_blank">Add/Edit</a>')
+			->setMultiple(true)
+			->setSource($categoriesMap)
+			->setAttribute(
+				'data-placeholder', 
+				'Add Categories'
+			);
+		$fields->addFieldToTab( 'Root.Main', $categoriesField, "Content" );
 		
 		return $fields;
 		

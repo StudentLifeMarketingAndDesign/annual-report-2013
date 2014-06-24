@@ -1,4 +1,4 @@
-
+<article id="main" class="article" role="main">
 <header class="article-header">
 	<% if $Department %><em class="article-dept">$Department</em><% end_if %>
 	<h1 class="article-title">$Title</h1>
@@ -31,7 +31,6 @@
 		</li>
 	</ul>
 </div>
-
-
+</article>
 	
 
