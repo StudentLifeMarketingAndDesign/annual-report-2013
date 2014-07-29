@@ -6,7 +6,7 @@ class IssueHolder extends Page {
 	private static $has_one = array();
 	private static $many_many = array ();
     private static $many_many_extraFields=array();
-    private static $allowed_children = array("Issue");
+    private static $allowed_children = array("Issue", 'RedirectorPage');
 
 	private static $defaults = array ();
 	public function getCMSFields(){
