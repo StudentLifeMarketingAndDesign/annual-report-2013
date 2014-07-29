@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
 
     // filter items when filter link is clicked
     $('#filters a').click(function(){
+
         var selector = $(this).attr('data-filter');
         $container.isotope({ filter: selector });
         $('#filters a').removeClass('active');
@@ -31,6 +32,7 @@ jQuery(document).ready(function($) {
 
     // Toggle for nav menu
     $('.menu-button').click(function(e) {
+        
         e.preventDefault();
         showMenu();
         $(this).text($(this).text() == 'Close' ? 'Menu' : 'Close');                        
@@ -54,6 +56,13 @@ jQuery(document).ready(function($) {
             $('.preview-list').css({'height': (height)+'px'});
         }
     });
+
+  $("#goto").change(function(){
+    if ($(this).val()!='') {
+      window.location.href=$(this).val();
+    }
+  });
+
 });
 
 

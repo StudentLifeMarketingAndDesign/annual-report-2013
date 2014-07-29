@@ -45,7 +45,7 @@
 	<script src="{$BaseHref}division-bar/js/division-bar.js"></script>
 	<script src="{$ThemeDir}/js/plugins-ck.js"></script>
 	<script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
-	<script src="{$ThemeDir}/js/main-ck.js"></script>
+	<script src="{$ThemeDir}/js/main.js"></script>
 	<% include GoogleAnalytics %>
 </body>
 </html>

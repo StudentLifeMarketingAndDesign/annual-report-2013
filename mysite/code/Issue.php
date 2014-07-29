@@ -60,6 +60,10 @@ class Issue_Controller extends Page_Controller {
 		'RandomVideo'
 	);
 
+	public function Issue(){
+		return $this;
+	}
+
 	
 	public function RandomVideo(){
 		$randomVideo = AnnualVideo::get()

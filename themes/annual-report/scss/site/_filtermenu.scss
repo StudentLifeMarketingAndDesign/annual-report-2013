@@ -58,6 +58,7 @@
 	@media screen and (min-width: $break-large) {
 		background: none;
 		padding: 10px 0;
+		padding-bottom: 0;
 	}
 }
 .oldcap-logo img {
@@ -108,6 +109,7 @@
 }
 
 
+
 .heading-main {
 	color: #fff;
 	font-size: 36px;
@@ -140,6 +142,16 @@
 	}
 }
 
+/* Dropdown Filter
+========================================================================== */
+
+#goto{
+	background: none;
+	color: white;
+	border-color: #333;
+	border-radius: 0;
+	font-size: 16px;
+}
 
 /* ISOTOPE FILTERS
 ========================================================================== */
