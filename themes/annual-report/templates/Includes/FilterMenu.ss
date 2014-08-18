@@ -18,9 +18,11 @@
     </a>
     <ul id="filters" class="main-nav clearfix">
     	<li><a href="#all" data-filter="*" class="active">All</a></li>
-    	<% loop Categories %>
-    		<li><a href="#$Title" data-filter=".$Title" class="">$Title</a></li>
-    	<% end_loop %>
+        <% with Issue %>
+        	<% loop Categories %>
+        		<li><a href="#$Title" data-filter=".$Title" class="">$Title</a></li>
+        	<% end_loop %>
+        <% end_with %>
        	<%-- 
         <li><a href="#excel" data-filter=".Excel">Excel</a></li>
         <li><a href="#stretch" data-filter=".Stretch">Stretch</a></li>
