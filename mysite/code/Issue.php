@@ -3,19 +3,15 @@ class Issue extends Page {
 
 	private static $db = array(
 	);
-
 	private static $has_one = array();
 	private static $many_many = array(
 		"AnnualVideos" => "AnnualVideo",
 		"Categories" => "Category"
-		);
+	);
     private static $many_many_extraFields=array();
-    
     private static $allowed_children = array("Article");
     private static $can_be_root = false;
-
 	private static $defaults = array ();
-
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
@@ -29,6 +25,7 @@ class Issue extends Page {
         //$f->addFieldToTab('Root.Main', $videosField); 
 		return $f;
 	}
+
 	
 }
 class Issue_Controller extends Page_Controller {
@@ -63,7 +60,6 @@ class Issue_Controller extends Page_Controller {
 	public function Issue(){
 		return $this;
 	}
-
 	
 	public function RandomVideo(){
 		$randomVideo = AnnualVideo::get()

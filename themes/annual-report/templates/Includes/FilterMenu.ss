@@ -7,7 +7,7 @@
                 <label for="goto" class="visuallyhidden">View this issue:</label>
                   <select id="goto">
                     <% loop Menu(2) %>
-                        <option value="$Link" <% if $isCurrent %>selected="selected"<% end_if %>>$Title</option>
+                        <option value="$Link" <% if $LinkOrSection %>selected="selected"<% end_if %>>$Title</option>
                     <% end_loop %>
                   </select>
                   <input type="submit" class="visuallyhidden"></input>
@@ -23,13 +23,5 @@
         		<li><a href="#$Title" data-filter=".$Title" class="">$Title</a></li>
         	<% end_loop %>
         <% end_with %>
-       	<%-- 
-        <li><a href="#excel" data-filter=".Excel">Excel</a></li>
-        <li><a href="#stretch" data-filter=".Stretch">Stretch</a></li>
-        <li><a href="#choose" data-filter=".Choose">Choose</a></li>
-        <li><a href="#engage" data-filter=".Engage">Engage</a></li>
-        <li><a href="#serve" data-filter=".Serve">Serve</a></li>
-        <li><a href="#about" data-filter=".About">About</a></li>
-        --%>
     </ul>
 </div>
