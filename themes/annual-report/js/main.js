@@ -1,4 +1,4 @@
-jQuery(window).load(function($) {
+jQuery(document).ready(function($) {
 
     // Isotope
     var $container = $('#isotope-menu');
