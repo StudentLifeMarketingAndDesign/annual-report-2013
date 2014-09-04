@@ -41,7 +41,7 @@
 
 	$Layout
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="{$ThemeDir}/build/build.js"></script>
+	<script src="{$ThemeDir}/build/build.src.js"></script>
 	<% include GoogleAnalytics %>
 </body>
 </html>

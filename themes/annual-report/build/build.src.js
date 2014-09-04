@@ -4487,16 +4487,35 @@ typeof JSON!="object"&&(JSON={}),function(){"use strict";function f(e){return e<
 
 })(window); // end closure
 
-jQuery(window).load(function($) {
+var $container;
 
-    // Isotope
+function triggerIsotope() {
+  // don't proceed if $container has not been selected
+  if ( !$container ) {
+    return;
+  }
+  // init Isotope
+  $container.isotope({
+    itemSelector : '.item',
+    layoutMode : 'vertical'
+  });
+}
+// trigger Isotope on document ready
+$(function(){
+  var $container = $('#isotope-menu');
+  triggerIsotope();
+});
+// trigger Isotope when fonts have loaded
+Typekit.load({
+  active: triggerIsotope,
+  inactive: triggerIsotope
+});
+
+
+
+
+jQuery(document).ready(function($) {
     var $container = $('#isotope-menu');
-
-    $container.isotope({
-        itemSelector : '.item',
-        layoutMode : 'vertical'
-    });
-
     // filter items when filter link is clicked
     $('#filters a').click(function(){
 
@@ -4524,13 +4543,13 @@ jQuery(document).ready(function($) {
         
         e.preventDefault();
         showMenu();
-        $(this).text($(this).text() == 'Close' ? 'Menu' : 'Close');                        
+        $(this).text($(this).text() == 'Close' ? 'Menu' : 'Close');                     
     });
 
     // Toggle for sidebar
     $('.sidebar-button').click(function(e) {
         e.preventDefault();
-        showSidebar();                                  
+        showSidebar();
     });
 
 
