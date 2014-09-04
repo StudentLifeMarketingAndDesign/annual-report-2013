@@ -7,7 +7,7 @@
                 <label for="goto" class="visuallyhidden">View this issue:</label>
                   <select id="goto">
                     <% loop Menu(2) %>
-                        <option value="$Link" <% if $LinkOrSection %>selected="selected"<% end_if %>>$Title</option>
+                        <option value="$Link" <% if $LinkOrSection == "section" %>selected="selected"<% end_if %>>$Title</option>
                     <% end_loop %>
                   </select>
                   <input type="submit" class="visuallyhidden"></input>
