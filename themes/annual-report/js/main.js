@@ -1,11 +1,11 @@
-jQuery(document).ready(function($) {
+jQuery(window).load(function($) {
 
     // Isotope
     var $container = $('#isotope-menu');
 
     $container.isotope({
         itemSelector : '.item',
-        layoutMode : 'straightDown'
+        layoutMode : 'vertical'
     });
 
     // filter items when filter link is clicked
@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
         
     // }
 
-}); 
+});
 
 jQuery(document).ready(function($) {
 

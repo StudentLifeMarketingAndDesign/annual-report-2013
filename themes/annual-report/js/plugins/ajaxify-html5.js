@@ -32,7 +32,7 @@
 			$body = $(document.body),
 			rootUrl = History.getRootUrl(),
 			scrollOptions = {
-				duration: 1200,
+				duration: 800,
 				easing:'swing'
 			};
 		
@@ -146,7 +146,7 @@
 
 					// Update the content
 					$content.stop(true,true);
-					$content.html(contentHtml).ajaxify().animate({opacity:1},800); /* you could fade in here if you'd like */
+					$content.html(contentHtml).ajaxify().css('opacity',100).show(); /* you could fade in here if you'd like */
 
 					// Update the title
 					document.title = $data.find('.document-title:first').text();
