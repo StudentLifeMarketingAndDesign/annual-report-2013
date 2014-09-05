@@ -56,13 +56,8 @@
         
     </div>
 
-    
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="{$BaseHref}division-bar/js/division-bar.js"></script>
-    <script src="{$ThemeDir}/js/plugins-ck.js"></script>
-    <script src="{$ThemeDir}/js/plugins/ajaxify-html5.js"></script>
-    <script src="{$ThemeDir}/js/main-ck.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{$ThemeDir}/build/build.js"></script>
     <% include GoogleAnalytics %>
 
 </body>
