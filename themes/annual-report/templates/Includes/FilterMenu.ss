@@ -10,7 +10,7 @@
                         <option value="$Link" <% if $LinkOrSection == "section" %>selected="selected"<% end_if %>>$Title</option>
                     <% end_loop %>
                   </select>
-                  <input type="submit" class="visuallyhidden"></input>
+                  <input type="submit" value="submit" class="visuallyhidden"></input>
                 </form>
         </strong>
     <a href="{$BaseHref}"><h1 class="heading-main">Annual<span class="break"></span> Report</h1>
