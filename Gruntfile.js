@@ -32,6 +32,7 @@ module.exports = function(grunt) {
           '<%=globalConfig.themeDir %>/bower_components/history.js/scripts/bundled/html4+html5/jquery.history.js',
           '<%=globalConfig.themeDir %>/js/plugins/socialcount.min.js',
           '<%=globalConfig.themeDir %>/js/plugins/ajaxify-html5.js',
+          '<%=globalConfig.themeDir %>/js/plugins/jquery.fitvids.js',
           '<%=globalConfig.themeDir %>/js/main.js'
         ],
         dest: '<%=globalConfig.themeDir %>/build/build.src.js'

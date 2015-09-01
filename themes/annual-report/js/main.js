@@ -42,19 +42,22 @@ jQuery(document).ready(function($) {
     // if (Modernizr.mq(large_mode)) {
     //     "use strict";
     //     $('.preview-list').perfectScrollbar({wheelSpeed:20});
-        
+
     // }
 
 });
 
 jQuery(document).ready(function($) {
 
+    //fitvids.js
+    $(".article-body").fitVids();
+
     // Toggle for nav menu
     $('.menu-button').click(function(e) {
-        
+
         e.preventDefault();
         showMenu();
-        $(this).text($(this).text() == 'Close' ? 'Menu' : 'Close');                     
+        $(this).text($(this).text() == 'Close' ? 'Menu' : 'Close');
     });
 
     // Toggle for sidebar
