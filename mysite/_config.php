@@ -15,5 +15,5 @@ MySQLDatabase::set_connection_charset('utf8');
 i18n::set_locale('en_US');
 
 if(Director::isLive()) {
-	Director::forceSSL(array('/^Security/','/^admin/'));
+	Director::forceSSL();
 }
