@@ -23,7 +23,7 @@
     <!-- Open Graph -->
     <meta property="og:type"     content="article"> 
     <meta property="og:url"      content="$AbsoluteLink">
-    <meta property="og:site_name"    content="2013 Division of Student Life Annual Report">
+    <meta property="og:site_name"    content="Division of Student Life Annual Report">
     <meta property="og:image"    content="$Photo.AbsoluteURL">
     <meta property="og:title"    content="$Title">
     <meta property="og:description"  content="$Excerpt">

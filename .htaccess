@@ -41,7 +41,8 @@ ErrorDocument 500 /assets/error-500.html
 </IfModule>
 ### SILVERSTRIPE END ###
 
-
+php_value post_max_size 100M
+php_value upload_max_filesize 40M
 
 php_flag display_errors on
 
