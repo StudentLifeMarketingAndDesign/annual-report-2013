@@ -18,17 +18,17 @@
 /*@import "elements/_form-bootstrap";*/
 /*@import "elements/_grid-bootstrap";*/
 /*@import "elements/_grid-simple";*/
-/*@import "elements/_tables";*/
+@import "elements/_tables";
 
 
 /* Plugins
--------------------------------------------*/ 
+-------------------------------------------*/
 @import "plugins/_isotope";
 @import "plugins/_socialcount-with-icons";
 
 
 /* Layout
--------------------------------------------*/ 
+-------------------------------------------*/
 @import "site/_filtermenu";
 @import "site/_home";
 @import "site/_previewlist";

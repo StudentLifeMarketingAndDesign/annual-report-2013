@@ -15,8 +15,7 @@ module.exports = function(grunt) {
           '<%=globalConfig.themeDir %>/css/master.css' : '<%=globalConfig.themeDir %>/scss/master.scss'
         },                  // Target
         options: {              // Target options
-          style: 'compressed',
-          sourcemap: 'true'
+          style: 'compressed'
         }
       }
     },
