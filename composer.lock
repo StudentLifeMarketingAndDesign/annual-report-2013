@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "b3d1f3125a77af66d2bfd934c775150e4c9aecc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b3d1f3125a77af66d2bfd934c775150e4c9aecc3",
+                "reference": "b3d1f3125a77af66d2bfd934c775150e4c9aecc3",
                 "shasum": ""
             },
             "require": {
@@ -103,7 +103,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2016-02-27 14:38:36"
         },
         {
             "name": "md/division-bar",
