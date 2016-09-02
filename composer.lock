@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "c9ea42169d6d3103b4de218e692dc70b251cc220"
+                "reference": "d100083910e7b4b760d7686cef0f0aaa3ce81181"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/c9ea42169d6d3103b4de218e692dc70b251cc220",
-                "reference": "c9ea42169d6d3103b4de218e692dc70b251cc220",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/d100083910e7b4b760d7686cef0f0aaa3ce81181",
+                "reference": "d100083910e7b4b760d7686cef0f0aaa3ce81181",
                 "shasum": ""
             },
             "require": {
@@ -141,10 +141,10 @@
             },
             "description": "The University of Iowa Division of Student Life Bar",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/accessibility-fixes",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2016-06-24 18:20:18"
+            "time": "2016-08-31 18:05:37"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -285,12 +285,12 @@
             "version": "3.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-reports.git",
+                "url": "https://github.com/silverstripe/silverstripe-reports.git",
                 "reference": "8f14b94433652952393c1c2ff07bcb4e436e0510"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-reports/zipball/8f14b94433652952393c1c2ff07bcb4e436e0510",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/8f14b94433652952393c1c2ff07bcb4e436e0510",
                 "reference": "8f14b94433652952393c1c2ff07bcb4e436e0510",
                 "shasum": ""
             },
