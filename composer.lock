@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b1856cfabe0f18c8584da1b2a31b3abe",
-    "content-hash": "c895dab3fd3a28b451420e6f3bfea651",
+    "hash": "bdcf6fdc445a34032dd2563ecaf8f525",
+    "content-hash": "4da3af9d3a38e20dc327b1dcb5ab202d",
     "packages": [
         {
             "name": "composer/installers",
@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project.git",
-                "reference": "22f2bb9edb9c2b0207900516b96aa3fa8230b001"
+                "reference": "55be6394d675494ca189e15ec598c3829c370844"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/annual-report-project/zipball/22f2bb9edb9c2b0207900516b96aa3fa8230b001",
-                "reference": "22f2bb9edb9c2b0207900516b96aa3fa8230b001",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/annual-report-project/zipball/55be6394d675494ca189e15ec598c3829c370844",
+                "reference": "55be6394d675494ca189e15ec598c3829c370844",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +133,8 @@
                 "php": ">=5.3.2",
                 "silverstripe/cms": "3.4.1",
                 "silverstripe/framework": "3.4.1",
-                "silverstripe/tagfield": "*"
+                "silverstripe/tagfield": "*",
+                "studiobonito/silverstripe-typekit": "*"
             },
             "type": "silverstripe-module",
             "description": "Division of Student Life Annual Report Project",
@@ -141,7 +142,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project/issues"
             },
-            "time": "2016-10-06 17:11:12"
+            "time": "2016-10-14 18:08:41"
         },
         {
             "name": "md/division-bar",
@@ -407,6 +408,67 @@
                 "tag"
             ],
             "time": "2016-08-22 09:56:00"
+        },
+        {
+            "name": "studiobonito/silverstripe-typekit",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-typekit.git",
+                "reference": "308e41cd50fcd2f96c295e52a17a387b90973ebb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-typekit/zipball/308e41cd50fcd2f96c295e52a17a387b90973ebb",
+                "reference": "308e41cd50fcd2f96c295e52a17a387b90973ebb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "silverstripe/cms": ">=3.1.2,<3.5",
+                "silverstripe/framework": ">=3.1.2,<3.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "symfony/class-loader": "~2.3"
+            },
+            "type": "silverstripe-module",
+            "autoload": {
+                "psr-4": {
+                    "StudioBonito\\SilverStripe\\TypeKit\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "StudioBonito\\SilverStripe\\TypeKit\\Test\\": "tests/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Densham",
+                    "email": "tom.densham@studiobonito.co.uk",
+                    "homepage": "http://www.studiobonito.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provide TypeKit integration for SilverStripe CMS.",
+            "homepage": "https://github.com/studiobonito/silverstripe-typekit",
+            "keywords": [
+                "silverstripe",
+                "silverstripe-typekit",
+                "studiobonito",
+                "typekit",
+                "typography"
+            ],
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-typekit/tree/master"
+            },
+            "time": "2016-10-14 18:07:16"
         }
     ],
     "packages-dev": [],
