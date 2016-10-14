@@ -31,10 +31,5 @@ class Page_Controller extends ContentController {
 
 	}
 
-	public function Issues(){
-		return Issue::get();
-	}
-
-	
 	
 }
