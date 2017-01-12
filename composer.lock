@@ -120,19 +120,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project.git",
-                "reference": "e2053a45c381eddb05c899b29c104ec487a672a2"
+                "reference": "a2387df4410ee152c98521b703529bb5bcaa4822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/annual-report-project/zipball/e2053a45c381eddb05c899b29c104ec487a672a2",
-                "reference": "e2053a45c381eddb05c899b29c104ec487a672a2",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/annual-report-project/zipball/a2387df4410ee152c98521b703529bb5bcaa4822",
+                "reference": "a2387df4410ee152c98521b703529bb5bcaa4822",
                 "shasum": ""
             },
             "require": {
                 "md/division-bar": "*",
                 "php": ">=5.3.2",
-                "silverstripe/cms": "3.4.1",
-                "silverstripe/framework": "3.4.1",
+                "silverstripe/cms": "3.4.3",
+                "silverstripe/framework": "3.4.3",
                 "silverstripe/tagfield": "*",
                 "studiobonito/silverstripe-typekit": "*"
             },
@@ -142,7 +142,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project/issues"
             },
-            "time": "2016-10-24 19:18:05"
+            "time": "2017-01-12 19:56:24"
         },
         {
             "name": "md/division-bar",
@@ -178,16 +178,16 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.4.1",
+            "version": "3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "bffab11a549d314ba4e3ed2137eae9ceb4bc7f23"
+                "reference": "9db49bfd62bb8d9a4f395b4548f6f8c36875553b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/bffab11a549d314ba4e3ed2137eae9ceb4bc7f23",
-                "reference": "bffab11a549d314ba4e3ed2137eae9ceb4bc7f23",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/9db49bfd62bb8d9a4f395b4548f6f8c36875553b",
+                "reference": "9db49bfd62bb8d9a4f395b4548f6f8c36875553b",
                 "shasum": ""
             },
             "require": {
@@ -223,20 +223,20 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2016-08-15 06:27:31"
+            "time": "2016-12-19 12:21:38"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.4.1",
+            "version": "3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "1f06e6dd18419cda02d58a78f39f6613c067a3ed"
+                "reference": "28d065c587601597473cb1ce247f60a38fe75f72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/1f06e6dd18419cda02d58a78f39f6613c067a3ed",
-                "reference": "1f06e6dd18419cda02d58a78f39f6613c067a3ed",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/28d065c587601597473cb1ce247f60a38fe75f72",
+                "reference": "28d065c587601597473cb1ce247f60a38fe75f72",
                 "shasum": ""
             },
             "require": {
@@ -272,7 +272,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2016-08-15 06:29:38"
+            "time": "2016-12-21 23:02:45"
         },
         {
             "name": "silverstripe/reports",
