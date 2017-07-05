@@ -36,4 +36,3 @@ i18n::set_locale('en_US');
 if(Director::isLive()) {
 	Director::forceSSL();
 }
-Authenticator::set_default_authenticator('SAMLAuthenticator');
