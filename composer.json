@@ -18,10 +18,10 @@
             "url": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project"
 
         },
-	{
-		"type":"vcs",
-		"url" : "https://github.com/StudentLifeMarketingAndDesign/silverstripe-typekit"
-	}     
+    	{
+    		"type":"vcs",
+    		"url" : "https://github.com/StudentLifeMarketingAndDesign/silverstripe-typekit"
+    	},   
 ]
 }
 
