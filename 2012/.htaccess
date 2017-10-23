@@ -1,3 +1,4 @@
 RewriteEngine On
-RewriteBase /
+RewriteBase /archive/2012/
+DirectoryIndex index.php
 RewriteRule ^index.html$ index.php [L]
