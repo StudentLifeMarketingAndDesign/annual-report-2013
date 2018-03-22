@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "33decf7c820e379bcc0c9cc9231ad0b6f00baacc"
+                "reference": "0c420e1cd0e8a3a78e7a5e48b1d2ec2fded5d39e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/33decf7c820e379bcc0c9cc9231ad0b6f00baacc",
-                "reference": "33decf7c820e379bcc0c9cc9231ad0b6f00baacc",
+                "url": "https://api.github.com/repos/composer/installers/zipball/0c420e1cd0e8a3a78e7a5e48b1d2ec2fded5d39e",
+                "reference": "0c420e1cd0e8a3a78e7a5e48b1d2ec2fded5d39e",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "^4.8.36"
             },
             "type": "composer-plugin",
             "extra": {
@@ -124,7 +124,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-10-19 08:12:54"
+            "time": "2018-01-25T16:41:42+00:00"
         },
         {
             "name": "md/annual-report-project",
@@ -132,19 +132,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project.git",
-                "reference": "cea641ecb6760ba4887f5d72adc5c1e6df0b17f0"
+                "reference": "1fb6552fea741998968c78eda9c122d9f037b0a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/annual-report-project/zipball/cea641ecb6760ba4887f5d72adc5c1e6df0b17f0",
-                "reference": "cea641ecb6760ba4887f5d72adc5c1e6df0b17f0",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/annual-report-project/zipball/1fb6552fea741998968c78eda9c122d9f037b0a8",
+                "reference": "1fb6552fea741998968c78eda9c122d9f037b0a8",
                 "shasum": ""
             },
             "require": {
                 "md/division-bar": "*",
                 "php": ">=5.3.2",
-                "silverstripe/cms": "3.6.2",
-                "silverstripe/framework": "3.6.2",
+                "silverstripe/cms": "3.6.5",
+                "silverstripe/framework": "3.6.5",
                 "silverstripe/tagfield": "*",
                 "studiobonito/silverstripe-typekit": "*"
             },
@@ -154,7 +154,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/annual-report-project/issues"
             },
-            "time": "2017-11-10 20:18:02"
+            "time": "2018-03-22T20:22:47+00:00"
         },
         {
             "name": "md/division-bar",
@@ -186,7 +186,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2016-10-14 20:47:47"
+            "time": "2016-10-14T20:47:47+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -240,16 +240,16 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.6.2",
+            "version": "3.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "a308ab327bf6bcc9a3d1f1cd36cffc3850e014b5"
+                "reference": "169f75c7bac29fdd816fdc1ea12bc22da9d6c4e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/a308ab327bf6bcc9a3d1f1cd36cffc3850e014b5",
-                "reference": "a308ab327bf6bcc9a3d1f1cd36cffc3850e014b5",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/169f75c7bac29fdd816fdc1ea12bc22da9d6c4e0",
+                "reference": "169f75c7bac29fdd816fdc1ea12bc22da9d6c4e0",
                 "shasum": ""
             },
             "require": {
@@ -259,6 +259,9 @@
                 "silverstripe/reports": "~3.4",
                 "silverstripe/siteconfig": "~3.4"
             },
+            "require-dev": {
+                "phpunit/phpunit": "^3 || ^4 || ^5"
+            },
             "type": "silverstripe-module",
             "extra": {
                 "branch-alias": {
@@ -267,7 +270,8 @@
             },
             "autoload": {
                 "classmap": [
-                    "tests/behat/"
+                    "tests/behat/",
+                    "code"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -290,20 +294,20 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2017-08-24T12:14:22+00:00"
+            "time": "2018-01-11T10:04:03+00:00"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.6.2",
+            "version": "3.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "3f5ddc7d003920a3f4bd65a33ce1150fbe4ee60e"
+                "reference": "a805aabecd1c859f772456e7b49fb3693b509787"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/3f5ddc7d003920a3f4bd65a33ce1150fbe4ee60e",
-                "reference": "3f5ddc7d003920a3f4bd65a33ce1150fbe4ee60e",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/a805aabecd1c859f772456e7b49fb3693b509787",
+                "reference": "a805aabecd1c859f772456e7b49fb3693b509787",
                 "shasum": ""
             },
             "require": {
@@ -312,7 +316,7 @@
                 "php": ">= 5.3.3, <7.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7"
+                "phpunit/phpunit": "^3 || ^4 || ^5"
             },
             "type": "silverstripe-module",
             "extra": {
@@ -321,8 +325,38 @@
                 }
             },
             "autoload": {
+                "psr-0": {
+                    "SilverStripe\\": "src/",
+                    "Zend_": "thirdparty/Zend/"
+                },
                 "classmap": [
-                    "tests/behat/features/bootstrap"
+                    "tests/behat/features/bootstrap",
+                    "admin/code",
+                    "api",
+                    "cache",
+                    "cli",
+                    "control",
+                    "core",
+                    "dev",
+                    "email",
+                    "filesystem",
+                    "forms",
+                    "i18n",
+                    "model",
+                    "oembed",
+                    "parsers",
+                    "search",
+                    "security",
+                    "tasks",
+                    "view",
+                    "thirdparty/php-peg",
+                    "thirdparty/simpletest",
+                    "thirdparty/zend_translate_railsyaml"
+                ],
+                "exclude-from-classmap": [
+                    "view/SSTemplateParser.php.inc",
+                    "dev/phpunit/PhpUnitWrapper.php",
+                    "model/fieldtypes/compat"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -345,7 +379,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2017-09-28T16:05:53+00:00"
+            "time": "2018-02-05T02:19:24+00:00"
         },
         {
             "name": "silverstripe/reports",
@@ -353,12 +387,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-reports.git",
-                "reference": "6025de29cc079d7112d20326d4c28909586f78ba"
+                "reference": "01fd709d7413bf3c812f4d9877e469f112d1f748"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/6025de29cc079d7112d20326d4c28909586f78ba",
-                "reference": "6025de29cc079d7112d20326d4c28909586f78ba",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/01fd709d7413bf3c812f4d9877e469f112d1f748",
+                "reference": "01fd709d7413bf3c812f4d9877e469f112d1f748",
                 "shasum": ""
             },
             "require": {
@@ -366,13 +400,18 @@
                 "silverstripe/framework": "~3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7"
+                "phpunit/phpunit": "^3 || ^4 || ^5"
             },
             "type": "silverstripe-module",
             "extra": {
                 "branch-alias": {
                     "3.x-dev": "3.7.x-dev"
                 }
+            },
+            "autoload": {
+                "classmap": [
+                    "code"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -395,7 +434,7 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2017-07-26 09:45:27"
+            "time": "2018-01-16T12:13:58+00:00"
         },
         {
             "name": "silverstripe/siteconfig",
@@ -403,16 +442,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-siteconfig.git",
-                "reference": "a336b45065e8ba1ba5fd39b4d24856d139642654"
+                "reference": "e6879131548dadfcd69c56a11186c2d0f8483e88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/a336b45065e8ba1ba5fd39b4d24856d139642654",
-                "reference": "a336b45065e8ba1ba5fd39b4d24856d139642654",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/e6879131548dadfcd69c56a11186c2d0f8483e88",
+                "reference": "e6879131548dadfcd69c56a11186c2d0f8483e88",
                 "shasum": ""
             },
             "require": {
                 "silverstripe/framework": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^3 || ^4 || ^5"
             },
             "type": "silverstripe-module",
             "extra": {
@@ -423,7 +465,7 @@
             },
             "autoload": {
                 "classmap": [
-                    "tests/behat/"
+                    "code"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -438,7 +480,7 @@
                 "silverstripe",
                 "siteconfig"
             ],
-            "time": "2017-07-26 10:34:38"
+            "time": "2018-01-09T13:53:43+00:00"
         },
         {
             "name": "silverstripe/tagfield",
@@ -480,7 +522,7 @@
                 "silverstripe",
                 "tag"
             ],
-            "time": "2017-03-30 16:11:29"
+            "time": "2017-03-30T16:11:29+00:00"
         },
         {
             "name": "studiobonito/silverstripe-typekit",
